@@ -28,6 +28,36 @@
     <link href="css/width-full.css" rel="stylesheet" media="screen" title="default">
 
     <link href="css/buttons.css" rel="stylesheet" media="screen">
+    <style>
+    html, body, .boxed, #sb-site
+    {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+    .rotate{
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
+ 
+    }  
+ 
+    .rotate.hovered,.rotate:hover
+    {
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+    }  
+
+    </style>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elementmedia queries -->
     <!--[if lt IE 9]>
@@ -98,7 +128,7 @@
 <div class="boxed">
 
 
-<nav class="navbar navbar-static-top navbar-default" role="navigation" id="header">
+<nav class="navbar navbar-static-top navbar-default" role="navigation" id="header" style="position: fixed; width: 100%;">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -106,7 +136,11 @@
                 <span class="sr-only">Toggle navigation</span>
                 <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand active" href="index.html">Artificial <span>Reason</span></a>
+            <a class="active ABC" href="index.html"><img class="rotate" src="img/logo-GC.png" alt="" style="margin-top: 12px;"/><img id="text" onmouseover="hover(this);" onmouseout="unhover(this);" src="img/logo-GCtext.png" alt="" style="margin-top: 12px; margin-left: 10px;"/></a>
+        <div id="cf">
+          <img class="bottom" src="/images/testlogo.jpg" />
+          <img class="top" src="/images/testlogo.jpg" />
+        </div>
         </div> <!-- navbar-header -->
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -304,8 +338,8 @@
 </nav>
 
 
-<section class="carousel-section">
-    <div id="carousel-example-generic" class="carousel carousel-razon slide" data-ride="carousel" data-interval="5000">
+<section class="carousel-section" style="height: 75%; margin-bottom: 0px;">
+    <div id="carousel-example-generic" class="carousel carousel-razon slide" data-ride="carousel" data-interval="5000" style="height: 100%;">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -314,7 +348,7 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="height: 100%;">
             <div class="item active">
                 <div class="container">
                     <div class="row">
@@ -401,6 +435,43 @@
         </a>
     </div>
 </section> <!-- carousel -->
+
+<section class="margin-bottom" style="height: 25%; padding: 5px;">
+    <div class="container" style="height: 100%;">
+        <div class="row" style="height: 100%;">
+            <div class="col-md-3 col-sm-6" style="height: 100%;">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-color: #000101;">
+                    <span><i class="fa fa-html5 fa-4x"></i></span>
+                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6" style="height: 100%;">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-color: #969696;">
+                    <span><i class="fa fa-html5 fa-4x"></i></span>
+                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6" style="height: 100%;">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-color: #7c6767;">
+                    <span><i class="fa fa-html5 fa-4x"></i></span>
+                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
+                </div>
+            </div>
+            
+            <div class="col-md-3 col-sm-6" style="height: 100%;">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-color: #dadada;">
+                    <span><i class="fa fa-html5 fa-4x"></i></span>
+                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
 
 <section class="margin-bottom">
     <div class="container">
@@ -875,6 +946,18 @@
 <script src="js/app.js"></script>
 
 <script src="js/index.js"></script>
+<script>
+    function hover(element) {
+    element.setAttribute('src', 'img/logo-GCtext22.png');
+}
+function unhover(element) {
+    element.setAttribute('src', 'img/logo-GCtext.png');
+}
+
+ $(".ABC").hover(function() {
+           $("img").toggleClass("hovered");
+        });
+</script>
 
 </body>
 

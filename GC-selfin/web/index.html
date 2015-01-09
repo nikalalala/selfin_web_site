@@ -56,7 +56,51 @@
         -moz-transform:rotate(360deg);
         -o-transform:rotate(360deg);
     }  
+    #c{
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
+    
+ 
+    }  
+    #a:hover #c
+{
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+}  
 
+    #g{
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
+    
+    transition: 0.8s;
+ 
+    }  
+    #a:hover #g
+    {
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    padding-right: 3px;
+    }  
     </style>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elementmedia queries -->
@@ -136,11 +180,7 @@
                 <span class="sr-only">Toggle navigation</span>
                 <i class="fa fa-bars"></i>
             </button>
-            <a class="active ABC" href="index.html"><img class="rotate" src="img/logo-GC.png" alt="" style="margin-top: 12px;"/><img id="text" onmouseover="hover(this);" onmouseout="unhover(this);" src="img/logo-GCtext.png" alt="" style="margin-top: 12px; margin-left: 10px;"/></a>
-        <div id="cf">
-          <img class="bottom" src="/images/testlogo.jpg" />
-          <img class="top" src="/images/testlogo.jpg" />
-        </div>
+            <a id="a" class="active" href="index.html"><img id="g" src="img/g.png" alt="" style="height: 27px; margin-top: 12px;"/><img id="c" src="img/C.png" alt="" style="height: 27px; margin-top: 12px; margin-left: -1px;"/><img id="text" src="img/logo-GCtext.png" alt="" style="margin-top: 12px; margin-left: 5px;"/></a>
         </div> <!-- navbar-header -->
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -339,7 +379,14 @@
 
 
 <section class="carousel-section" style="height: 75%; margin-bottom: 0px;">
-    <div id="carousel-example-generic" class="carousel carousel-razon slide" data-ride="carousel" data-interval="5000" style="height: 100%;">
+    <div class="container" style="position: absolute; width: 100%; margin: 0px; padding: 0px; margin-top: 50px;">
+    <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop style="width: 100%; z-index: 0;">
+      <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+    <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm">
+    <source src="//demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div id="carousel-example-generic" class="carousel carousel-razon slide" data-ride="carousel" data-interval="5000" style="height: 100%; background: none;">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -348,9 +395,9 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" style="height: 100%;">
+        <div class="carousel-inner" style="height: 100%; margin-top: 50px;">
             <div class="item active">
-                <div class="container">
+                <div class="container" style="height: 100%;">
                     <div class="row">
                         <div class="col-md-6 col-sm-7">
                             <div class="carousel-caption">
@@ -368,7 +415,7 @@
                         </div>
                         <div class="col-md-6 col-sm-5 hidden-xs carousel-img-wrap">
                             <div class="carousel-img">
-                                <img src="img/demo/pre.png" class="img-responsive animated bounceInUp animation-delay-3" alt="Image">
+                                <img src="img/demo/pre.png" class="img-responsive animated bounceInUp animation-delay-3" alt="Image" style="height: 80%;">
                             </div>
                         </div>
                     </div>
@@ -436,36 +483,41 @@
     </div>
 </section> <!-- carousel -->
 
-<section class="margin-bottom" style="height: 25%; padding: 5px;">
+<section class="margin-bottom" style="min-height: 25%; padding: 5px; position: relative; background-image: url(img/back.png); margin-bottom: 0px;">
     <div class="container" style="height: 100%;">
         <div class="row" style="height: 100%;">
+            <a id="move1" href="#guide">
             <div class="col-md-3 col-sm-6" style="height: 100%;">
-                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-color: #000101;">
-                    <span><i class="fa fa-html5 fa-4x"></i></span>
-                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background: none;">
+                    <span><img src="img/guide.png" alt=""/></span>
+                    <h4 class="content-box-title" style="color: black;"><b>GUEST CARD GUIDE</b></h4>
                 </div>
             </div>
-            
+            </a>
+            <a id="move2" href="#guide">
             <div class="col-md-3 col-sm-6" style="height: 100%;">
-                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-color: #969696;">
-                    <span><i class="fa fa-html5 fa-4x"></i></span>
-                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background: none;">
+                    <span><img src="img/info.png" alt=""/></span>
+                    <h4 class="content-box-title" style="color: black;"><b>GUEST CARD INFO</b></h4>
                 </div>
             </div>
-            
+            </a>
+            <a id="move3" href="#guide">
             <div class="col-md-3 col-sm-6" style="height: 100%;">
-                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-color: #7c6767;">
-                    <span><i class="fa fa-html5 fa-4x"></i></span>
-                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background: none;">
+                    <span><img src="img/events.png" alt=""/></span>
+                    <h4 class="content-box-title" style="color: black;"><b>EVENTS & OFFERS</b></h4>
                 </div>
             </div>
-            
+            </a>
+            <a id="move4" href="#guide">
             <div class="col-md-3 col-sm-6" style="height: 100%;">
-                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-color: #dadada;">
-                    <span><i class="fa fa-html5 fa-4x"></i></span>
-                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background: none;">
+                    <span><img src="img/ask.png" alt=""/></span>
+                    <h4 class="content-box-title" style="color: black;"><b>ASK QUESTION</b></h4>
                 </div>
             </div>
+            </a>
 
         </div>
     </div>
@@ -473,7 +525,7 @@
 
 
 
-<section class="margin-bottom">
+<section id="guide" class="margin-bottom" style="position: relative; background-color: white; margin-bottom: 0px; padding-top: 50px;">
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-6">
@@ -947,16 +999,20 @@
 
 <script src="js/index.js"></script>
 <script>
-    function hover(element) {
-    element.setAttribute('src', 'img/logo-GCtext22.png');
-}
-function unhover(element) {
-    element.setAttribute('src', 'img/logo-GCtext.png');
-}
+    $('#move1, #move2, #move3, #move4[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
 
- $(".ABC").hover(function() {
-           $("img").toggleClass("hovered");
-        });
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
 </script>
 
 </body>

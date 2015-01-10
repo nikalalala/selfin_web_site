@@ -100,7 +100,51 @@
     -moz-transform:rotate(360deg);
     -o-transform:rotate(360deg);
     padding-right: 3px;
-    }  
+    }
+    
+    @media (max-width: 767px) {
+    #a {
+      padding-left: 50px;
+    }
+    }
+
+    #move1:hover #color1{
+    color: #07a0e0 !important;
+    }
+    
+    #move2:hover #color2{
+    color: #ff780b !important;
+    }
+    
+    #move3:hover #color3{
+    color: #35a04e !important;
+    }
+    
+    #move4:hover #color4{
+        color: #e811b3 !important; 
+    } 
+    
+    @media (max-height: 700px) {
+    #color1, #color2, #color3, #color4 {
+      font-size: 14px;
+      margin-top: 10px !important;
+    }
+    #hover1, #hover2, #hover3, #hover4 {
+        height: 50px;
+    }
+    }
+    
+    @media (max-height: 520px) {
+    #color1, #color2, #color3, #color4 {
+        display: none;
+    }
+    }
+    
+    @media (max-height: 600px) {
+    #color1, #color2, #color3, #color4 {
+        margin-bottom: 5px;
+    }
+    }
     </style>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elementmedia queries -->
@@ -483,38 +527,38 @@
     </div>
 </section> <!-- carousel -->
 
-<section class="margin-bottom" style="min-height: 25%; padding: 5px; position: relative; background-image: url(img/back.png); margin-bottom: 0px;">
-    <div class="container" style="height: 100%;">
+<section class="margin-bottom" style="min-height: 25%; position: relative; background-image: url(img/back.png); margin-bottom: 0px;">
+    <div class="container" style="height: 100%; margin: auto; left: 0; right: 0;">
         <div class="row" style="height: 100%;">
-            <a id="move1" href="#guide">
-            <div class="col-md-3 col-sm-6" style="height: 100%;">
-                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background: none;">
-                    <span><img src="img/guide.png" alt=""/></span>
-                    <h4 class="content-box-title" style="color: black;"><b>GUEST CARD GUIDE</b></h4>
+            <a id="move1" data-img="img/guide-hover.png" href="#guide">
+            <div class="col-md-3 col-sm-6" style="height: 100%; padding: 10px;">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-image: url(img/back-GC.png); padding-left: 0; padding-right: 0;">
+                    <span><img id="hover1" src="img/guide.png" data-original="img/guide.png" alt="e.s.t"/></span>
+                    <h4 id="color1" class="content-box-title" style="color: black;"><b>GUEST CARD GUIDE</b></h4>
                 </div>
             </div>
             </a>
-            <a id="move2" href="#guide">
-            <div class="col-md-3 col-sm-6" style="height: 100%;">
-                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background: none;">
-                    <span><img src="img/info.png" alt=""/></span>
-                    <h4 class="content-box-title" style="color: black;"><b>GUEST CARD INFO</b></h4>
+            <a id="move2" data-img="img/info-hover.png" href="#guide">
+            <div class="col-md-3 col-sm-6" style="height: 100%; padding: 10px;">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-image: url(img/back-GC.png);">
+                    <span><img id="hover2" src="img/info.png" data-original="img/info.png" alt=""/></span>
+                    <h4 id="color2" class="content-box-title" style="color: black;"><b>GUEST CARD INFO</b></h4>
                 </div>
             </div>
             </a>
-            <a id="move3" href="#guide">
-            <div class="col-md-3 col-sm-6" style="height: 100%;">
-                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background: none;">
-                    <span><img src="img/events.png" alt=""/></span>
-                    <h4 class="content-box-title" style="color: black;"><b>EVENTS & OFFERS</b></h4>
+            <a id="move3" data-img="img/event-hover.png" href="#guide">
+            <div class="col-md-3 col-sm-6" style="height: 100%; padding: 10px;">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-image: url(img/back-GC.png);">
+                    <span><img id="hover3" src="img/events.png" data-original="img/events.png" alt=""/></span>
+                    <h4 id="color3" class="content-box-title" style="color: black;"><b>EVENTS & OFFERS</b></h4>
                 </div>
             </div>
             </a>
-            <a id="move4" href="#guide">
-            <div class="col-md-3 col-sm-6" style="height: 100%;">
-                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background: none;">
-                    <span><img src="img/ask.png" alt=""/></span>
-                    <h4 class="content-box-title" style="color: black;"><b>ASK QUESTION</b></h4>
+            <a id="move4" data-img="img/ask-hover.png" href="#guide">
+            <div class="col-md-3 col-sm-6" style="height: 100%; padding: 10px;">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-image: url(img/back-GC.png);">
+                    <span><img id="hover4" src="img/ask.png" data-original="img/ask.png" alt=""/></span>
+                    <h4 id="color4" class="content-box-title" style="color: black;"><b>ASK QUESTION</b></h4>
                 </div>
             </div>
             </a>
@@ -1012,6 +1056,39 @@
             return false;
         }
     }
+});
+</script>
+<script>
+$(document).ready(function() {
+    $("#move1").mouseover(function() {
+        $("#hover1").attr("src", $(this).data("img"));
+    }).mouseout(function() {
+        $("#hover1").attr("src", $("#hover1").data("original"));
+    });
+});
+
+$(document).ready(function() {
+    $("#move2").mouseover(function() {
+        $("#hover2").attr("src", $(this).data("img"));
+    }).mouseout(function() {
+        $("#hover2").attr("src", $("#hover2").data("original"));
+    });
+});
+
+$(document).ready(function() {
+    $("#move3").mouseover(function() {
+        $("#hover3").attr("src", $(this).data("img"));
+    }).mouseout(function() {
+        $("#hover3").attr("src", $("#hover3").data("original"));
+    });
+});
+
+$(document).ready(function() {
+    $("#move4").mouseover(function() {
+        $("#hover4").attr("src", $(this).data("img"));
+    }).mouseout(function() {
+        $("#hover4").attr("src", $("#hover4").data("original"));
+    });
 });
 </script>
 

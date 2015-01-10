@@ -3653,7 +3653,7 @@ a.thumbnail.active {
   margin: 0 2px;
 }
 .carousel-section {
-  background-image: url("../img/slide_back.jpg");
+  background-image: url("../img/back.png");
   margin-bottom: 40px;
   overflow: hidden;
 }
@@ -3683,7 +3683,7 @@ a.thumbnail.active {
   width: 100%;
 }
 .carousel-razon .carousel-indicators {
-  bottom: 0px !important;
+  bottom: 50px !important;
 }
 .carousel-razon .carousel-indicators li {
   margin: 0 2px;

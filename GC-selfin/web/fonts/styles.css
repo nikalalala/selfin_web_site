@@ -50,3 +50,9 @@
 .icon-rest:before {
   content: "d";
 }
+.icon-travel:before {
+  content: "e";
+}
+.icon-shopping:before {
+  content: "f";
+}

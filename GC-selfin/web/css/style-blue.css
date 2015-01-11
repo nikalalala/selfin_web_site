@@ -982,7 +982,7 @@ h6 {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   line-height: 120%;
-  color: #0099da;
+  color: gray;
   margin: 20px 0 17px 0;
 }
 h1 {
@@ -2032,8 +2032,8 @@ hr.double {
 }
 .icon-ar.icon-ar-inverse {
   background-color: transparent;
-  color: #0099da;
-  border: solid 1px #0099da;
+  color: gray;
+  border: solid 1px gray;
 }
 .icon-ar.icon-ar-sm {
   width: 32px;

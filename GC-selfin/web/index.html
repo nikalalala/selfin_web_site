@@ -23,6 +23,8 @@
     <link href="css/lightbox.css" rel="stylesheet" media="screen">
     <link href="css/jquery.bxslider.css" rel="stylesheet">
     <link href="css/syntaxhighlighter/shCore.css" rel="stylesheet" media="screen">
+    <link href="fonts/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fontastic.s3.amazonaws.com/yViyDPPuGYAYzq4mp23dMQ/icons.css" rel="stylesheet">
 
     <link href="css/style-blue.css" rel="stylesheet" media="screen" title="default">
     <link href="css/width-full.css" rel="stylesheet" media="screen" title="default">
@@ -124,6 +126,7 @@
         color: #e811b3 !important; 
     } 
     
+    
     @media (max-height: 700px) {
     #color1, #color2, #color3, #color4 {
       font-size: 14px;
@@ -134,17 +137,79 @@
     }
     }
     
+    
     @media (max-height: 520px) {
     #color1, #color2, #color3, #color4 {
         display: none;
     }
     }
     
+    
     @media (max-height: 600px) {
     #color1, #color2, #color3, #color4 {
         margin-bottom: 5px;
     }
     }
+    
+    
+    
+    
+    #icon-hover:hover .icon-accommodation-o {
+        color: white !important; 
+        font-size: 120px !important;
+        top: -45px !important;
+    }
+    #icon-hover:hover #span-hover {
+        width: 120px !important;
+        height: 120px !important;
+        background-color: green !important; 
+        border-color: green !important;
+    }
+    #icon-hover:hover #h4-hover {
+        color: green !important;
+        margin-top: 0px !important;
+    }
+    
+
+    #icon-hover2:hover .icon-rest {
+        color: white !important; 
+        font-size: 90px !important;
+        top: -12px !important;
+    }
+    #icon-hover2:hover #span-hover2 {
+        width: 120px !important;
+        height: 120px !important;
+        background-color: #ff780b !important;
+        border-color: #ff780b !important;
+    }
+    #icon-hover2:hover #h4-hover2 {
+        color: #ff780b !important;
+        margin-top: 0px !important;
+    }    
+    
+    
+    
+    #icon-hover3:hover .icon-night {
+        color: white !important; 
+        font-size: 90px !important;
+        top: -10px !important;
+    }
+    #icon-hover3:hover #span-hover3 {
+        width: 120px !important;
+        height: 120px !important;
+        background-color: #ff7070 !important;
+        border-color: #ff7070 !important;
+    }
+    #icon-hover3:hover #h4-hover3 {
+        color: #ff7070 !important;
+        margin-top: 0px !important;
+    }
+    
+    
+    
+    #span-hover, .icon-accommodation-o, #h4-hover , #span-hover2, .icon-rest, #h4-hover2 , #span-hover3, .icon-night, #h4-hover3{
+    transition: all .5s ease-in-out;
+    }  
     </style>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elementmedia queries -->
@@ -567,39 +632,108 @@
     </div>
 </section>
 
+<a id="guide" style="position: relative; top: -42px;"></a>
 
-
-<section id="guide" class="margin-bottom" style="position: relative; background-color: white; margin-bottom: 0px; padding-top: 50px;">
+<section class="margin-bottom" style="position: relative; background-color: white; margin-bottom: 0px; padding-top: 15px;">
     <div class="container">
+        <h1 style="border-bottom: 1px solid #ddd; margin-bottom: 30px;"><b>Guest Card Guide</b></h1>
         <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <div class="content-box box-default animated fadeInUp animation-delay-10">
-                    <span class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse"><i class="fa fa-html5"></i></span>
-                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
-                    <p>Consectetur adipisicing elit vritatis dolor rem officia molestiae atque eveniet inventore earum quas voluptates cumque</p>
+            <a href="#">
+            <div id="icon-hover" class="col-md-3 col-sm-6">
+                <div class="content-box animated fadeInUp animation-delay-10" style="max-height: 200px;">
+                    <span id="span-hover" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-accommodation-o" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
+                    <h4 id="h4-hover" class="content-box-title">Accommodation</h4>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="content-box box-default animated fadeInUp animation-delay-14">
-                    <span class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse"><i class="fa fa-css3"></i></span>
-                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
-                    <p>Consectetur adipisicing elit vritatis dolor rem officia molestiae atque eveniet inventore earum quas voluptates cumque</p>
+            </a>
+            <a href="#">
+            <div id="icon-hover2" class="col-md-3 col-sm-6">
+                <div class="content-box animated fadeInUp animation-delay-10" style="max-height: 200px;">
+                    <span id="span-hover2" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-rest" style="font-size: 70px; position: absolute; left: 0; right: 0; top: -3px;"></i></span>
+                    <h4 id="h4-hover2" class="content-box-title">Restaurant & Bus</h4>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="content-box box-default animated fadeInUp animation-delay-16">
-                    <span class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse"><i class="fa fa-desktop"></i></span>
-                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
-                    <p>Consectetur adipisicing elit vritatis dolor rem officia molestiae atque eveniet inventore earum quas voluptates cumque</p>
+            </a>
+            <a href="#"> 
+            <div id="icon-hover3" class="col-md-3 col-sm-6">
+                <div class="content-box animated fadeInUp animation-delay-10" style="max-height: 200px;">
+                    <span id="span-hover3" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-night" style="font-size: 70px; position: absolute; left: 0; right: 0; top: 0px;"></i></span>
+                    <h4 id="h4-hover3" class="content-box-title">Nightlife & Clubs</h4>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="content-box box-default animated fadeInUp animation-delay-12">
-                    <span class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse"><i class="fa fa-flag"></i></span>
-                    <h4 class="content-box-title">Lorem ipsum dolor</h4>
-                    <p>Consectetur adipisicing elit vritatis dolor rem officia molestiae atque eveniet inventore earum quas voluptates cumque</p>
+            </a>
+            <a href="#">   
+            <div id="icon-hover4" class="col-md-3 col-sm-6">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="max-height: 200px;">
+                    <span id="span-hover4" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-accommodation-o" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
+                    <h4 id="h4-hover4" class="content-box-title">Accommodation</h4>
                 </div>
             </div>
+            </a>    
+            <a href="#">    
+            <div id="icon-hover5" class="col-md-3 col-sm-6">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="max-height: 200px;">
+                    <span id="span-hover5" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-accommodation-o" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
+                    <h4 id="h4-hover5" class="content-box-title">Accommodation</h4>
+                </div>
+            </div>
+            </a>    
+            <a href="#">
+            <div id="icon-hover6" class="col-md-3 col-sm-6">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="max-height: 200px;">
+                    <span id="span-hover6" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-accommodation-o" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
+                    <h4 id="h4-hover6" class="content-box-title">Accommodation</h4>
+                </div>
+            </div>
+            </a>    
+            <a href="#">
+            <div id="icon-hover7" class="col-md-3 col-sm-6">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="max-height: 200px;">
+                    <span id="span-hover7" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-accommodation-o" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
+                    <h4 id="h4-hover7" class="content-box-title">Accommodation</h4>
+                </div>
+            </div>
+            </a>    
+            <a href="#">
+            <div id="icon-hover8" class="col-md-3 col-sm-6">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="max-height: 200px;">
+                    <span id="span-hover8" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-accommodation-o" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
+                    <h4 id="h4-hover8" class="content-box-title">Accommodation</h4>
+                </div>
+            </div>
+            </a>    
+            <a href="#">    
+            <div id="icon-hover9" class="col-md-3 col-sm-6">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="max-height: 200px;">
+                    <span id="span-hover9" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-accommodation-o" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
+                    <h4 id="h4-hover9" class="content-box-title">Accommodation</h4>
+                </div>
+            </div>
+            </a>    
+            <a href="#">    
+            <div id="icon-hover10" class="col-md-3 col-sm-6">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="max-height: 200px;">
+                    <span id="span-hover10" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-accommodation-o" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
+                    <h4 id="h4-hover10" class="content-box-title">Accommodation</h4>
+                </div>
+            </div>
+            </a>    
+            <a href="#">    
+            <div id="icon-hover11" class="col-md-3 col-sm-6">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="max-height: 200px;">
+                    <span id="span-hover11" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-accommodation-o" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
+                    <h4 id="h4-hover11" class="content-box-title">Accommodation</h4>
+                </div>
+            </div>
+            </a>    
+            <a href="#">    
+            <div id="icon-hover12" class="col-md-3 col-sm-6">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="max-height: 200px;">
+                    <span id="span-hover12" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-accommodation-o" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
+                    <h4 id="h4-hover12" class="content-box-title">Accommodation</h4>
+                </div>
+            </div>
+            </a>    
         </div>
     </div>
 </section>

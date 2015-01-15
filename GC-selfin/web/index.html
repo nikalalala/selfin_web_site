@@ -279,7 +279,26 @@
     
     #span-hover, .icon-accommodation-o, #h4-hover , #span-hover2, .icon-rest, #h4-hover2, #span-hover3, .icon-night, #h4-hover3, #span-hover6, .icon-travel, #h4-hover6, #h4-hover4, #span-hover4, .icon-shopping, #h4-hover4, #h4-hover12, #span-hover12, .icon-family, #h4-hover12, #h4-hover7, #span-hover7, .icon-transport, #h4-hover7{
     transition: all .5s ease-in-out;
-    }  
+    } 
+    
+    
+    
+    #move1:hover .icon-gclogofit {
+        text-shadow: 1px 1px 1px #969696 !important;
+    }
+    
+    #move1:hover #color1 {
+        color: #07a0e0 !important;
+    }
+    
+    
+    #move2:hover .icon-gcinfo {
+        text-shadow: 1px 1px 1px #969696 !important; 
+    }
+    
+    #move2:hover #color2 {
+        color: grey !important;
+    }
     </style>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elementmedia queries -->
@@ -663,21 +682,21 @@
 </section> <!-- carousel -->
 
 <section class="margin-bottom" style="min-height: 25%; position: relative; background-image: url(img/back.png); margin-bottom: 0px;">
-    <div class="container" style="height: 100%; margin: auto; left: 0; right: 0;">
-        <div class="row" style="height: 100%;">
-            <a id="move1" data-img="img/guide-hover.png" href="#guide">
-            <div class="col-md-3 col-sm-6" style="height: 100%; padding: 10px;">
-                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-image: url(img/back-GC.png); padding-left: 0; padding-right: 0;">
-                    <span><img id="hover1" src="img/guide.png" data-original="img/guide.png" alt="e.s.t"/></span>
-                    <h4 id="color1" class="content-box-title" style="color: black;"><b>GUEST CARD GUIDE</b></h4>
+    <div class="container">
+        <div class="row">
+            <a id="move1" href="#guide">
+            <div class="col-md-3 col-sm-6" style="padding: 10px;">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="background-image: url(img/back-GC.png);">
+                    <span><i class="icon-gclogofit" style="font-size: 100px; text-shadow: 3px 3px 3px #969696; color: #07a0e0"></i></span>
+                    <h4 id="color1" class="content-box-title" style="color: #07a0e0; margin-top: 0;"><b>GUEST CARD GUIDE</b></h4>
                 </div>
             </div>
             </a>
             <a id="move2" data-img="img/info-hover.png" href="#guide">
-            <div class="col-md-3 col-sm-6" style="height: 100%; padding: 10px;">
-                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-image: url(img/back-GC.png);">
-                    <span><img id="hover2" src="img/info.png" data-original="img/info.png" alt=""/></span>
-                    <h4 id="color2" class="content-box-title" style="color: black;"><b>GUEST CARD INFO</b></h4>
+            <div class="col-md-3 col-sm-6" style="padding: 10px;">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="background-image: url(img/back-GC.png);">
+                    <span><i class="icon-gcinfo" style="font-size: 100px; text-shadow: 3px 3px 3px #969696; color: gray;"></i></span>
+                    <h4 id="color2" class="content-box-title" style="color: gray; margin-top: 0;"><b>GUEST CARD INFO</b></h4>
                 </div>
             </div>
             </a>
@@ -750,7 +769,7 @@
             </a>
             <a href="#">
             <div id="icon-hover7" class="col-md-3 col-sm-6">
-                <div class="content-box animated animation-delay-10" style="max-height: 200px;">
+                <div class="content-box animated animation-delay-8" style="max-height: 200px;">
                     <span id="span-hover7" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-transport" style="font-size: 80px; position: absolute; left: -5px; right: 0; top: -20px;"></i></span>
                     <h4 id="h4-hover7" class="content-box-title" style="color: #6d6855;">Transportation</h4>
                 </div>
@@ -758,7 +777,7 @@
             </a> 
             <a href="#"> 
             <div id="icon-hover3" class="col-md-3 col-sm-6">
-                <div class="content-box animated animation-delay-8" style="max-height: 200px;">
+                <div class="content-box animated animation-delay-10" style="max-height: 200px;">
                     <span id="span-hover3" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-night" style="font-size: 70px; position: absolute; left: 0; right: 0; top: 0px;"></i></span>
                     <h4 id="h4-hover3" class="content-box-title" style="color: #ff7070;">Nightlife & Clubs</h4>
                 </div>
@@ -1260,39 +1279,6 @@
             return false;
         }
     }
-});
-</script>
-<script>
-$(document).ready(function() {
-    $("#move1").mouseover(function() {
-        $("#hover1").attr("src", $(this).data("img"));
-    }).mouseout(function() {
-        $("#hover1").attr("src", $("#hover1").data("original"));
-    });
-});
-
-$(document).ready(function() {
-    $("#move2").mouseover(function() {
-        $("#hover2").attr("src", $(this).data("img"));
-    }).mouseout(function() {
-        $("#hover2").attr("src", $("#hover2").data("original"));
-    });
-});
-
-$(document).ready(function() {
-    $("#move3").mouseover(function() {
-        $("#hover3").attr("src", $(this).data("img"));
-    }).mouseout(function() {
-        $("#hover3").attr("src", $("#hover3").data("original"));
-    });
-});
-
-$(document).ready(function() {
-    $("#move4").mouseover(function() {
-        $("#hover4").attr("src", $(this).data("img"));
-    }).mouseout(function() {
-        $("#hover4").attr("src", $("#hover4").data("original"));
-    });
 });
 </script>
 <script>

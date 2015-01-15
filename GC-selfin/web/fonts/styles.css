@@ -62,3 +62,12 @@
 .icon-transport:before {
   content: "h";
 }
+.icon-gclogo:before {
+  content: "i";
+}
+.icon-gclogofit:before {
+  content: "j";
+}
+.icon-gcinfo:before {
+  content: "k";
+}

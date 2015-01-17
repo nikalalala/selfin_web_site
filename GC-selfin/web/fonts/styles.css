@@ -56,9 +56,6 @@
 .icon-shopping:before {
   content: "f";
 }
-.icon-family:before {
-  content: "g";
-}
 .icon-transport:before {
   content: "h";
 }
@@ -70,4 +67,64 @@
 }
 .icon-gcinfo:before {
   content: "k";
+}
+.icon-sport:before {
+  content: "p";
+}
+.icon-entertainment:before {
+  content: "n";
+}
+.icon-samegrelosvaneti:before {
+  content: "q";
+}
+.icon-qvemoqartli:before {
+  content: "l";
+}
+.icon-tbilisi:before {
+  content: "m";
+}
+.icon-samtskhejavakheti:before {
+  content: "o";
+}
+.icon-mtskhetamtianeti:before {
+  content: "r";
+}
+.icon-kakheti:before {
+  content: "g";
+}
+.icon-map1:before {
+  content: "s";
+}
+.icon-map2:before {
+  content: "t";
+}
+.icon-map3:before {
+  content: "u";
+}
+.icon-map4:before {
+  content: "v";
+}
+.icon-map5:before {
+  content: "w";
+}
+.icon-map6:before {
+  content: "x";
+}
+.icon-map7:before {
+  content: "y";
+}
+.icon-map8:before {
+  content: "z";
+}
+.icon-map9:before {
+  content: "A";
+}
+.icon-map10:before {
+  content: "B";
+}
+.icon-map11:before {
+  content: "C";
+}
+.icon-map12:before {
+  content: "D";
 }

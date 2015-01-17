@@ -23,10 +23,14 @@
     <link href="css/lightbox.css" rel="stylesheet" media="screen">
     <link href="css/jquery.bxslider.css" rel="stylesheet">
     <link href="css/syntaxhighlighter/shCore.css" rel="stylesheet" media="screen">
+    <link href="css/build.css" rel="stylesheet" type="text/css"/>
     <link href="fonts/styles.css" rel="stylesheet" type="text/css"/>
     <link href="https://fontastic.s3.amazonaws.com/yViyDPPuGYAYzq4mp23dMQ/icons.css" rel="stylesheet">
+    <link href="scroll/jquery.jscrollpane.css" rel="stylesheet" type="text/css"/>
+    
+    
 
-    <link href="css/style-blue.css" rel="stylesheet" media="screen" title="default">
+    <link href="css/style-blue.css" rel="stylesheet" media="screen" title="default"> 
     <link href="css/width-full.css" rel="stylesheet" media="screen" title="default">
 
     <link href="css/buttons.css" rel="stylesheet" media="screen">
@@ -37,6 +41,12 @@
         margin: 0;
         height: 100%;
     }
+    
+    .fixed {
+      position: fixed;
+      top:0;
+    }
+    
     .rotate{
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
@@ -123,7 +133,7 @@
     }
     
     #move4:hover #color4{
-        color: #e811b3 !important; 
+    color: #e811b3 !important; 
     } 
     
     
@@ -273,33 +283,96 @@
     #icon-hover7:hover #h4-hover7 {
         margin-top: 5px !important;
         text-decoration: underline;
-    }      
+    }    
     
     
     
-    #span-hover, .icon-accommodation-o, #h4-hover , #span-hover2, .icon-rest, #h4-hover2, #span-hover3, .icon-night, #h4-hover3, #span-hover6, .icon-travel, #h4-hover6, #h4-hover4, #span-hover4, .icon-shopping, #h4-hover4, #h4-hover12, #span-hover12, .icon-family, #h4-hover12, #h4-hover7, #span-hover7, .icon-transport, #h4-hover7{
+    
+    #icon-hover5:hover .icon-entertainment {
+    color: white !important; 
+    font-size: 135px !important;
+    top: -55px !important;
+    }
+    #icon-hover5:hover #span-hover5 {
+        width: 120px !important;
+        height: 120px !important;
+        background-color: #ff9a00 !important;
+        border-color: #ff9a00 !important;
+    }
+    #icon-hover5:hover #h4-hover5 {
+        margin-top: 5px !important;
+        text-decoration: underline;
+    }   
+    
+    
+    
+    
+    
+    #icon-hover8:hover .icon-art {
+    color: white !important; 
+    font-size: 125px !important;
+    top: -50px !important;
+    }
+    #icon-hover8:hover #span-hover8 {
+        width: 120px !important;
+        height: 120px !important;
+        background-color: #0002a9 !important;
+        border-color: #0002a9 !important;
+    }
+    #icon-hover8:hover #h4-hover8 {
+        margin-top: 5px !important;
+        text-decoration: underline;
+    }   
+    
+    
+    
+    
+    #icon-hover9:hover .icon-sport {
+    color: white !important; 
+    font-size: 125px !important;
+    top: -50px !important;
+    }
+    #icon-hover9:hover #span-hover9 {
+        width: 120px !important;
+        height: 120px !important;
+        background-color: black !important;
+        border-color: black !important;
+    }
+    #icon-hover9:hover #h4-hover9 {
+        margin-top: 5px !important;
+        text-decoration: underline;
+    }   
+    
+    
+    
+    
+    #span-hover, .icon-accommodation-o, #h4-hover , #span-hover2, .icon-rest, #h4-hover2, #span-hover3, .icon-night, #h4-hover3, #span-hover6, .icon-travel, #h4-hover6, #h4-hover4, #span-hover4, .icon-shopping, #h4-hover4, #h4-hover12, #span-hover12, .icon-family, #h4-hover12, #h4-hover7, #span-hover7, .icon-transport, #h4-hover7, #h4-hover5, #span-hover5, .icon-entertainment, #h4-hover5, #h4-hover8, #span-hover8, .icon-art, #h4-hover8, #h4-hover9, #span-hover9, .icon-sport, #h4-hover9{
     transition: all .5s ease-in-out;
     } 
-    
-    
-    
-    #move1:hover .icon-gclogofit {
-        text-shadow: 1px 1px 1px #969696 !important;
-    }
-    
-    #move1:hover #color1 {
-        color: #07a0e0 !important;
-    }
-    
-    
-    #move2:hover .icon-gcinfo {
-        text-shadow: 1px 1px 1px #969696 !important; 
-    }
-    
-    #move2:hover #color2 {
-        color: grey !important;
-    }
     </style>
+    <style>
+        #checkbox1,#checkbox2,#checkbox3,#checkbox4,#checkbox5,#checkbox6,#checkbox7,#checkbox8,#checkbox9,#checkbox10,#checkbox11,#checkbox12,#checkbox13,#checkbox14,#checkbox15,#checkbox16,#checkbox17,#checkbox18,#checkbox19,#checkbox20,
+        #checkbox21,#checkbox22,#checkbox23,#checkbox24,#checkbox25,#checkbox26,#checkbox27,#checkbox28,#checkbox29,#checkbox30,#checkbox31,#checkbox32,#checkbox33,#checkbox34,#checkbox35,#checkbox36,#checkbox37,#checkbox38,#checkbox39,#checkbox40,
+        #checkbox41,#checkbox42,#checkbox43,#checkbox44,#checkbox45,#checkbox46,#checkbox47,#checkbox48,#checkbox49,#checkbox50,#checkbox51,#checkbox52,#checkbox53,#checkbox54,#checkbox55,#checkbox56,#checkbox57,#checkbox58,#checkbox59,#checkbox60,
+        #checkbox61,#checkbox62,#checkbox63,#checkbox64,#checkbox65,#checkbox66,#checkbox67,#checkbox68,#checkbox69,#checkbox70,#checkbox71,#checkbox72,#checkbox73,#checkbox74,#checkbox75,#checkbox76,#checkbox77,#checkbox78,#checkbox79,#checkbox80,#checkbox81,
+        #checkbox82,#checkbox83,#checkbox84,#checkbox85,#checkbox86,#checkbox87,#checkbox88,#checkbox89,#checkbox90,#checkbox91,#checkbox92,#checkbox93,#checkbox94,#checkbox95,#checkbox96,#checkbox97,#checkbox98,#checkbox99,#checkbox100,#checkbox101,
+        #checkbox102,#checkbox103,#checkbox104,#checkbox105,#checkbox106,#checkbox107,#checkbox108,#checkbox109,#checkbox110,#checkbox111,#checkbox112,#checkbox113,#checkbox114,#checkbox115,#checkbox116,#checkbox117,#checkbox118,#checkbox119,#checkbox120,
+        #checkbox121,#checkbox122,#checkbox123,#checkbox124,#checkbox125,#checkbox126,#checkbox127{
+            display: none;
+        }
+        
+        .icon-map1, .icon-map2, .icon-map3, .icon-map4, .icon-map5, .icon-map6, .icon-map7, .icon-map8, .icon-map9, .icon-map10, .icon-map11, .icon-map12
+{
+    color: #ffff99;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    
+}
+    </style>
+  
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elementmedia queries -->
     <!--[if lt IE 9]>
@@ -369,7 +442,8 @@
 <div id="sb-site">
 <div class="boxed">
 
-
+    <div style="position: relative; width: 100%; height: 20px; background-color: transparent;"></div>
+    
 <nav class="navbar navbar-static-top navbar-default" role="navigation" id="header" style="position: fixed; width: 100%;"> 
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -687,32 +761,32 @@
             <a id="move1" href="#guide">
             <div class="col-md-3 col-sm-6" style="padding: 10px;">
                 <div class="content-box box-default animated fadeInUp animation-delay-10" style="background-image: url(img/back-GC.png);">
-                    <span><i class="icon-gclogofit" style="font-size: 100px; text-shadow: 3px 3px 3px #969696; color: #07a0e0"></i></span>
-                    <h4 id="color1" class="content-box-title" style="color: #07a0e0; margin-top: 0;"><b>GUEST CARD GUIDE</b></h4>
+                    <span><i class="icon-gclogofit" style="font-size: 110px; color: #07a0e0;"></i></span>
+                    <h4 id="color1" class="content-box-title"><b>GUEST CARD GUIDE</b></h4>
                 </div>
             </div>
             </a>
-            <a id="move2" data-img="img/info-hover.png" href="#guide">
+            <a id="move2" href="#guide">
             <div class="col-md-3 col-sm-6" style="padding: 10px;">
                 <div class="content-box box-default animated fadeInUp animation-delay-10" style="background-image: url(img/back-GC.png);">
-                    <span><i class="icon-gcinfo" style="font-size: 100px; text-shadow: 3px 3px 3px #969696; color: gray;"></i></span>
-                    <h4 id="color2" class="content-box-title" style="color: gray; margin-top: 0;"><b>GUEST CARD INFO</b></h4>
+                    <span><i class="icon-gcinfo" style="font-size: 110px; color: #ff780b;"></i></span>
+                    <h4 id="color2" class="content-box-title"><b>GUEST CARD INFO</b></h4>
+                </div>
+            </div> 
+            </a> 
+            <a id="move3" href="#guide">
+            <div class="col-md-3 col-sm-6" style="padding: 10px;">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="background-image: url(img/back-GC.png);">
+                    <span><i class="icon-events" style="font-size: 110px; color: #35a04e;"></i></span>
+                    <h4 id="color3" class="content-box-title"><b>EVENTS & OFFERS</b></h4>
                 </div>
             </div>
-            </a>
-            <a id="move3" data-img="img/event-hover.png" href="#guide">
-            <div class="col-md-3 col-sm-6" style="height: 100%; padding: 10px;">
-                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-image: url(img/back-GC.png);">
-                    <span><img id="hover3" src="img/events.png" data-original="img/events.png" alt=""/></span>
-                    <h4 id="color3" class="content-box-title" style="color: black;"><b>EVENTS & OFFERS</b></h4>
-                </div>
-            </div>
-            </a>
-            <a id="move4" data-img="img/ask-hover.png" href="#guide">
-            <div class="col-md-3 col-sm-6" style="height: 100%; padding: 10px;">
-                <div class="content-box box-default animated fadeInUp animation-delay-10" style="height: 100%; background-image: url(img/back-GC.png);">
-                    <span><img id="hover4" src="img/ask.png" data-original="img/ask.png" alt=""/></span>
-                    <h4 id="color4" class="content-box-title" style="color: black;"><b>ASK QUESTION</b></h4>
+            </a> 
+            <a id="move4" href="#guide">
+            <div class="col-md-3 col-sm-6" style="padding: 10px;">
+                <div class="content-box box-default animated fadeInUp animation-delay-10" style="background-image: url(img/back-GC.png);">
+                    <span><i class="icon-ask" style="font-size: 110px; color: #e811b3;"></i></span>
+                    <h4 id="color4" class="content-box-title"><b>ASK QUESTION</b></h4>
                 </div>
             </div>
             </a>
@@ -753,9 +827,9 @@
             </a>    
             <a href="#">    
             <div id="icon-hover5" class="col-md-3 col-sm-6">
-                <div class="content-box box-default animated animation-delay-12" style="max-height: 200px;">
-                    <span id="span-hover5" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-accommodation-o" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
-                    <h4 id="h4-hover5" class="content-box-title" style="color: green;">Accommodation</h4>
+                <div class="content-box animated animation-delay-12" style="max-height: 200px;">
+                    <span id="span-hover5" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-entertainment" style="font-size: 110px; position: absolute; left: 0; right: 0; top: -40px;"></i></span>
+                    <h4 id="h4-hover5" class="content-box-title" style="color: #ff9a00;">Entertainment</h4>
                 </div>
             </div>
             </a>    
@@ -781,27 +855,27 @@
                     <span id="span-hover3" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-night" style="font-size: 70px; position: absolute; left: 0; right: 0; top: 0px;"></i></span>
                     <h4 id="h4-hover3" class="content-box-title" style="color: #ff7070;">Nightlife & Clubs</h4>
                 </div>
-            </div>
+            </div> 
             </a>
             <a href="#">
             <div id="icon-hover8" class="col-md-3 col-sm-6">
-                <div class="content-box box-default animated animation-delay-12" style="max-height: 200px;">
-                    <span id="span-hover8" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-accommodation-o" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
-                    <h4 id="h4-hover8" class="content-box-title" style="color: green;">Accommodation</h4>
+                <div class="content-box animated animation-delay-12" style="max-height: 200px;">
+                    <span id="span-hover8" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-art" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
+                    <h4 id="h4-hover8" class="content-box-title" style="color: #0002a9;">Art & Culture</h4>
                 </div>
             </div>
             </a>    
             <a href="#">    
             <div id="icon-hover9" class="col-md-3 col-sm-6">
-                <div class="content-box box-default animated animation-delay-6" style="max-height: 200px;">
-                    <span id="span-hover9" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-accommodation-o" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
-                    <h4 id="h4-hover9" class="content-box-title" style="color: green;">Accommodation</h4>
+                <div class="content-box animated animation-delay-6" style="max-height: 200px;">
+                    <span id="span-hover9" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-sport" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
+                    <h4 id="h4-hover9" class="content-box-title" style="color: black;">Leisure and Sport</h4>
                 </div>
             </div>
             </a>    
             <a href="#">    
             <div id="icon-hover10" class="col-md-3 col-sm-6">
-                <div class="content-box box-default animated animation-delay-8" style="max-height: 200px;">
+                <div class="content-box box-default animated animation-delay-8" style="min-height: 20%;">
                     <span id="span-hover10" class="icon-ar icon-ar-lg icon-ar-round icon-ar-inverse" style="width: 100px; height: 100px; border-radius: 100%;"><i class="icon-accommodation-o" style="font-size: 100px; position: absolute; left: 0; right: 0; top: -35px;"></i></span>
                     <h4 id="h4-hover10" class="content-box-title" style="color: green;">Accommodation</h4>
                 </div>
@@ -868,55 +942,898 @@
     <section class="margin-bottom">
         <p class="lead lead-lg text-center primary-color margin-bottom">Knows the <strong>Artificial Reason</strong> and surprise yourself</p>
        <div class="row">
-            <div class="col-md-6">
-                <h2 class="no-margin-top">About us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, alias, nihil molestias libero corporis perferendis a quasi at.</p>
-                <p>Eos, illum, odit nulla provident sint atque quasi necessitatibus dolores voluptatibus perspiciatis aliquid tempora possimus laudantium. Blanditiis, deleniti!</p>
-                <p>Saepe, laborum, eligendi vitae ad excepturi officiis vel omnis quidem et dolorum rem vero explicabo consequatur mollitia nihil!</p>
-                <p>Fuga, omnis, quo, cumque, ipsa quasi facilis voluptatibus iure veniam nostrum voluptate accusantium dolore reprehenderit. Corrupti, mollitia, maiores!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ducimus, pariatur ad ipsam et quod numquam eveniet magni aspernatur.</p>
+           <div class="col-md-3 col-sm-12">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-tabs-ar">
+                  <li class="active col-md-6" style="padding: 0;"><a href="#home" data-toggle="tab">Filters</a></li>
+                  <li class="col-md-6" style="padding: 0;"><a href="#profile" data-toggle="tab">Locations</a></li>
+                </ul>
 
-            </div>
-            <div class="col-md-6">
+                <!-- Tab panes -->
+                <div class="tab-content" style="padding: 0; border: none; background-color: transparent;">
+                    <div class="tab-pane active" id="home">
+                        
+             <div class="col-md-12" style="padding: 0;">
                 <div class="panel-group" id="accordion">
-                  <div class="panel panel-default">
-                    <div class="panel-heading panel-heading-link">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                          <i class="fa fa-lightbulb-o"></i> Talent and creativity
+                <div class="panel panel-default" style="margin-top: 5px;">
+                      <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                        <a data-toggle="collapse" href="#collapseOne" style="background-color: #F5F5F5;">
+                          Vanue Type
                         </a>
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in">
-                      <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati molestiae id ipsum ipsa repudiandae. Voluptatum, molestias, quas magnam repellat quos facilis sequi. Ullam optio eius deleniti dolore quasi doloribus ipsam incidunt perferendis.</p>
-                        <p>Dolores, corrupti, laborum, officia sit aliquam doloremque accusantium nemo sunt veniam est incidunt perferendis minima obcaecati ex aperiam voluptatibus blanditiis eum suscipit magnam dolorum in adipisci nihil ipsam perspiciatis molestiae!</p>
+                        <div class="panel-body scroll-pane" style="line-height: 1.1em; margin: 10px; padding-bottom: 5px; height: 167px; overflow: auto; border: none;">
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-top: 0px;">
+                                <input id="checkbox1" type="checkbox">
+                                <label for="checkbox1">
+                                    <span style="padding-left: 5px;">Restaurant</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox2" type="checkbox">
+                                <label for="checkbox2">
+                                    <span style="padding-left: 5px;">Banquet Hall</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox3" type="checkbox">
+                                <label for="checkbox3">
+                                    <span style="padding-left: 5px;">Countryside</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox4" type="checkbox">
+                                <label for="checkbox4">
+                                    <span style="padding-left: 5px;">Bakery</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox5" type="checkbox">
+                                <label for="checkbox5">
+                                    <span style="padding-left: 5px;">Confectionery</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox6" type="checkbox">
+                                <label for="checkbox6">
+                                    <span style="padding-left: 5px;">Catering</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox7" type="checkbox">
+                                <label for="checkbox7">
+                                    <span style="padding-left: 5px;">Coffee House</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox8" type="checkbox">
+                                <label for="checkbox8">
+                                    <span style="padding-left: 5px;">Tea House</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox9" type="checkbox">
+                                <label for="checkbox9">
+                                    <span style="padding-left: 5px;">Street-Food</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox10" type="checkbox">
+                                <label for="checkbox10">
+                                    <span style="padding-left: 5px;">Night Club</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox11" type="checkbox">
+                                <label for="checkbox11">
+                                    <span style="padding-left: 5px;">Beer Pub</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox12" type="checkbox">
+                                <label for="checkbox12">
+                                    <span style="padding-left: 5px;">Bar</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox13" type="checkbox">
+                                <label for="checkbox13">
+                                    <span style="padding-left: 5px;">Cafe</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox14" type="checkbox">
+                                <label for="checkbox14">
+                                    <span style="padding-left: 5px;">Pub</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox15" type="checkbox">
+                                <label for="checkbox15">
+                                    <span style="padding-left: 5px;">Fast Food</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox16" type="checkbox">
+                                <label for="checkbox16">
+                                    <span style="padding-left: 5px;">Khinkali House</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox17" type="checkbox">
+                                <label for="checkbox17">
+                                    <span style="padding-left: 5px;">Sports Bar</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox18" type="checkbox">
+                                <label for="checkbox18">
+                                    <span style="padding-left: 5px;">Pizza</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-bottom: 0px;">
+                                <input id="checkbox19" type="checkbox">
+                                <label for="checkbox19">
+                                    <span style="padding-left: 5px;">At The Hotel</span>
+                                </label>
+                            </div>
+                          
                       </div>
                     </div>
                   </div>
                   <div class="panel panel-default">
-                    <div class="panel-heading panel-heading-link">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
-                          <i class="fa fa-desktop"></i> Design and code
+                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                        <a data-toggle="collapse" href="#collapseTwo" style="background-color: #F5F5F5;">
+                          Purpose of Visit
                         </a>
                     </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dignissimos inventore cupiditate expedita saepe enim nobis nostrum? Laborum, laudantium, maiores, cupiditate, perspiciatis at ad accusamus corporis sed ipsam et velit!</p>
-                        <p>Incidunt, harum itaque voluptatum asperiores recusandae explicabo maiores. Alias, quos, ex impedit at error id laborum fugit architecto qui beatae molestiae dolorum rem veritatis quia aliquam totam accusamus perferendis. Nulla!</p>
+                    <div id="collapseTwo" class="panel-collapse collapse in">
+                      <div class="panel-body scroll-pane" style="line-height: 1.1em; margin: 10px; padding-bottom: 5px; height: 167px; overflow: auto; border: none;">
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-top: 0px;">
+                                <input id="checkbox20" type="checkbox">
+                                <label for="checkbox20">
+                                    <span style="padding-left: 5px;">Friends</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox21" type="checkbox">
+                                <label for="checkbox21">
+                                    <span style="padding-left: 5px;">Family Dinner</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox22" type="checkbox">
+                                <label for="checkbox22">
+                                    <span style="padding-left: 5px;">Romantic Meeting</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox23" type="checkbox">
+                                <label for="checkbox23">
+                                    <span style="padding-left: 5px;">Business Dinner Supper</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox24" type="checkbox">
+                                <label for="checkbox24">
+                                    <span style="padding-left: 5px;">Business Lunch</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox25" type="checkbox">
+                                <label for="checkbox25">
+                                    <span style="padding-left: 5px;">Business Breakfast</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox26" type="checkbox">
+                                <label for="checkbox26">
+                                    <span style="padding-left: 5px;">Impress a Companion</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox27" type="checkbox">
+                                <label for="checkbox27">
+                                    <span style="padding-left: 5px;">Enjoy your Drink</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox28" type="checkbox">
+                                <label for="checkbox28">
+                                    <span style="padding-left: 5px;">Stag Night</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox29" type="checkbox">
+                                <label for="checkbox29">
+                                    <span style="padding-left: 5px;">Hen Night</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox30" type="checkbox">
+                                <label for="checkbox30">
+                                    <span style="padding-left: 5px;">Warm up Party</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox127" type="checkbox">
+                                <label for="checkbox127">
+                                    <span style="padding-left: 5px;">After Party</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox31" type="checkbox">
+                                <label for="checkbox31">
+                                    <span style="padding-left: 5px;">A Place to Meet People</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox32" type="checkbox">
+                                <label for="checkbox32">
+                                    <span style="padding-left: 5px;">Dancing</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox33" type="checkbox">
+                                <label for="checkbox33">
+                                    <span style="padding-left: 5px;">Late Supper</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox34" type="checkbox">
+                                <label for="checkbox34">
+                                    <span style="padding-left: 5px;">Fans</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox35" type="checkbox">
+                                <label for="checkbox35">
+                                    <span style="padding-left: 5px;">Wedding Party</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox36" type="checkbox">
+                                <label for="checkbox36">
+                                    <span style="padding-left: 5px;">Bomond</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox37" type="checkbox">
+                                <label for="checkbox37">
+                                    <span style="padding-left: 5px;">Early Breakfast</span>
+                                </label>
+                            </div>
+                          <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox38" type="checkbox">
+                                <label for="checkbox38">
+                                    <span style="padding-left: 5px;">Corporate Events</span>
+                                </label>
+                            </div>
+                          <div class="checkbox checkbox-info checkbox-circle" style="margin-bottom: 0px;">
+                                <input id="checkbox39" type="checkbox">
+                                <label for="checkbox39">
+                                    <span style="padding-left: 5px;">Tourists</span>
+                                </label>
+                            </div>
                       </div>
                     </div>
                   </div>
                   <div class="panel panel-default">
-                    <div class="panel-heading panel-heading-link">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
-                          <i class="fa fa-user"></i> Quality and Support
+                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                        <a data-toggle="collapse" href="#collapseThree" style="background-color: #F5F5F5;">
+                          Music
                         </a>
                     </div>
-                    <div id="collapseThree" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, rerum unde doloribus accusamus pariatur non expedita quibusdam velit totam obcaecati. Consequatur, deserunt, asperiores quam nisi earum voluptates animi labore tempore!</p>
-                        <p>Dolorum, aliquam, totam labore saepe error a eum culpa assumenda sint laudantium ipsa iure ullam et dicta nesciunt repellendus optio voluptatibus reprehenderit odit officia fugiat necessitatibus recusandae architecto ad neque?</p>
+                    <div id="collapseThree" class="panel-collapse collapse in">
+                      <div class="panel-body scroll-pane" style="line-height: 1.1em; margin: 10px; padding-bottom: 5px; max-height: 167px; overflow: auto; border: none;">
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-top: 0px;">
+                                <input id="checkbox40" type="checkbox">
+                                <label for="checkbox40">
+                                    <span style="padding-left: 5px;">Dj</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox41" type="checkbox">
+                                <label for="checkbox41">
+                                    <span style="padding-left: 5px;">Juke Box</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox42" type="checkbox">
+                                <label for="checkbox42">
+                                    <span style="padding-left: 5px;">Karaoke</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-bottom: 0px;">
+                                <input id="checkbox43" type="checkbox">
+                                <label for="checkbox43">
+                                    <span style="padding-left: 5px;">Live Music</span>
+                                </label>
+                            </div>
                       </div>
                     </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                        <a data-toggle="collapse" href="#collapseFour" style="background-color: #F5F5F5;">
+                          Reservation Information
+                        </a>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse in">
+                      <div class="panel-body scroll-pane" style="line-height: 1.1em; margin: 10px; padding-bottom: 5px; max-height: 167px; overflow: auto; border: none;">
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-top: 0px;">
+                                <input id="checkbox44" type="checkbox">
+                                <label for="checkbox44">
+                                    <span style="padding-left: 5px;">Not accepted</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox45" type="checkbox">
+                                <label for="checkbox45">
+                                    <span style="padding-left: 5px;">Not required</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox46" type="checkbox">
+                                <label for="checkbox46">
+                                    <span style="padding-left: 5px;">Required</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-bottom: 0px;">
+                                <input id="checkbox47" type="checkbox">
+                                <label for="checkbox47">
+                                    <span style="padding-left: 5px;">Suggested</span>
+                                </label>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                        <a data-toggle="collapse" href="#collapseFive" style="background-color: #F5F5F5;">
+                          Attire
+                        </a>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse in">
+                      <div class="panel-body scroll-pane" style="line-height: 1.1em; margin: 10px; padding-bottom: 5px; max-height: 167px; overflow: auto; border: none;">
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-top: 0px;">
+                                <input id="checkbox48" type="checkbox">
+                                <label for="checkbox48">
+                                    <span style="padding-left: 5px;">Casual</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox49" type="checkbox">
+                                <label for="checkbox49">
+                                    <span style="padding-left: 5px;">Formal</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox50" type="checkbox">
+                                <label for="checkbox50">
+                                    <span style="padding-left: 5px;">Jacket Required</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox51" type="checkbox">
+                                <label for="checkbox51">
+                                    <span style="padding-left: 5px;">No Dress Code</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-bottom: 0px;">
+                                <input id="checkbox52" type="checkbox">
+                                <label for="checkbox52">
+                                    <span style="padding-left: 5px;">No Jeans</span>
+                                </label>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                        <a data-toggle="collapse" href="#collapseSix" style="background-color: #F5F5F5;">
+                          Working Days
+                        </a>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse in">
+                      <div class="panel-body scroll-pane" style="line-height: 1.1em; margin: 10px; padding-bottom: 5px; max-height: 167px; overflow: auto; border: none;">
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-top: 0px;">
+                                <input id="checkbox53" type="checkbox">
+                                <label for="checkbox53">
+                                    <span style="padding-left: 5px;">Monday</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox54" type="checkbox">
+                                <label for="checkbox54">
+                                    <span style="padding-left: 5px;">Tuesday</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox55" type="checkbox">
+                                <label for="checkbox55">
+                                    <span style="padding-left: 5px;">Wednesday</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox56" type="checkbox">
+                                <label for="checkbox56">
+                                    <span style="padding-left: 5px;">Thursday</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox57" type="checkbox">
+                                <label for="checkbox57">
+                                    <span style="padding-left: 5px;">Friday</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox58" type="checkbox">
+                                <label for="checkbox58">
+                                    <span style="padding-left: 5px;">Saturday</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-bottom: 0px;">
+                                <input id="checkbox59" type="checkbox">
+                                <label for="checkbox59">
+                                    <span style="padding-left: 5px;">Sunday</span>
+                                </label>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                        <a data-toggle="collapse" href="#collapseSeven" style="background-color: #F5F5F5;">
+                          Environment
+                        </a>
+                    </div>
+                    <div id="collapseSeven" class="panel-collapse collapse in">
+                      <div class="panel-body scroll-pane" style="line-height: 1.1em; margin: 10px; padding-bottom: 5px; max-height: 167px; overflow: auto; border: none;">
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-top: 0px;">
+                                <input id="checkbox60" type="checkbox">
+                                <label for="checkbox60">
+                                    <span style="padding-left: 5px;">Cosy</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox61" type="checkbox">
+                                <label for="checkbox61">
+                                    <span style="padding-left: 5px;">Quiet</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox62" type="checkbox">
+                                <label for="checkbox62">
+                                    <span style="padding-left: 5px;">Family</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox63" type="checkbox">
+                                <label for="checkbox63">
+                                    <span style="padding-left: 5px;">Noisy Evenings</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox64" type="checkbox">
+                                <label for="checkbox64">
+                                    <span style="padding-left: 5px;">Domestic</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox65" type="checkbox">
+                                <label for="checkbox65">
+                                    <span style="padding-left: 5px;">Prestigious</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox66" type="checkbox">
+                                <label for="checkbox66">
+                                    <span style="padding-left: 5px;">Popular</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox67" type="checkbox">
+                                <label for="checkbox67">
+                                    <span style="padding-left: 5px;">Fashionable</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox68" type="checkbox">
+                                <label for="checkbox68">
+                                    <span style="padding-left: 5px;">Youth Oriented</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox69" type="checkbox">
+                                <label for="checkbox69">
+                                    <span style="padding-left: 5px;">Lounge</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox70" type="checkbox">
+                                <label for="checkbox70">
+                                    <span style="padding-left: 5px;">Noise</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox71" type="checkbox">
+                                <label for="checkbox71">
+                                    <span style="padding-left: 5px;">Romantic</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-bottom: 0px;">
+                                <input id="checkbox72" type="checkbox">
+                                <label for="checkbox72">
+                                    <span style="padding-left: 5px;">Wide</span>
+                                </label>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                        <a data-toggle="collapse" href="#collapseEight" style="background-color: #F5F5F5;">
+                          Interior
+                        </a>
+                    </div>
+                    <div id="collapseEight" class="panel-collapse collapse in">
+                      <div class="panel-body scroll-pane" style="line-height: 1.1em; margin: 10px; padding-bottom: 5px; max-height: 167px; overflow: auto; border: none;">
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-top: 0px;">
+                                <input id="checkbox73" type="checkbox">
+                                <label for="checkbox73">
+                                    <span style="padding-left: 5px;">Loungers</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox74" type="checkbox">
+                                <label for="checkbox74">
+                                    <span style="padding-left: 5px;">Several Halls</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox75" type="checkbox">
+                                <label for="checkbox75">
+                                    <span style="padding-left: 5px;">Non Smoking Area</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox76" type="checkbox">
+                                <label for="checkbox76">
+                                    <span style="padding-left: 5px;">Wide</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox77" type="checkbox">
+                                <label for="checkbox77">
+                                    <span style="padding-left: 5px;">VIP</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox78" type="checkbox">
+                                <label for="checkbox78">
+                                    <span style="padding-left: 5px;">Classical European</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox79" type="checkbox">
+                                <label for="checkbox79">
+                                    <span style="padding-left: 5px;">Original</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox80" type="checkbox">
+                                <label for="checkbox80">
+                                    <span style="padding-left: 5px;">Separate Rooms</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox81" type="checkbox">
+                                <label for="checkbox81">
+                                    <span style="padding-left: 5px;">Domestic</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox82" type="checkbox">
+                                <label for="checkbox82">
+                                    <span style="padding-left: 5px;">Luxurious</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox83" type="checkbox">
+                                <label for="checkbox83">
+                                    <span style="padding-left: 5px;">Neutral</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox84" type="checkbox">
+                                <label for="checkbox84">
+                                    <span style="padding-left: 5px;">Strict</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox85" type="checkbox">
+                                <label for="checkbox85">
+                                    <span style="padding-left: 5px;">Glamorous</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox86" type="checkbox">
+                                <label for="checkbox86">
+                                    <span style="padding-left: 5px;">Urban</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox87" type="checkbox">
+                                <label for="checkbox87">
+                                    <span style="padding-left: 5px;">Pompous</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox88" type="checkbox">
+                                <label for="checkbox88">
+                                    <span style="padding-left: 5px;">Solid</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox89" type="checkbox">
+                                <label for="checkbox89">
+                                    <span style="padding-left: 5px;">National</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox90" type="checkbox">
+                                <label for="checkbox90">
+                                    <span style="padding-left: 5px;">Smoking Area</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-bottom: 0px;">
+                                <input id="checkbox91" type="checkbox">
+                                <label for="checkbox91">
+                                    <span style="padding-left: 5px;">Bar Stand</span>
+                                </label>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                        <a data-toggle="collapse" href="#collapseNine" style="background-color: #F5F5F5;">
+                          Special Features
+                        </a>
+                    </div>
+                    <div id="collapseNine" class="panel-collapse collapse in">
+                      <div class="panel-body scroll-pane" style="line-height: 1.1em; margin: 10px; padding-bottom: 5px; max-height: 167px; overflow: auto; border: none;">
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-top: 0px;">
+                                <input id="checkbox92" type="checkbox">
+                                <label for="checkbox92">
+                                    <span style="padding-left: 5px;">Bar Stand</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox93" type="checkbox">
+                                <label for="checkbox93">
+                                    <span style="padding-left: 5px;">Credit Cards Accepted</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox94" type="checkbox">
+                                <label for="checkbox94">
+                                    <span style="padding-left: 5px;">Entertaining Shows</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox95" type="checkbox">
+                                <label for="checkbox95">
+                                    <span style="padding-left: 5px;">Large Groups</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox96" type="checkbox">
+                                <label for="checkbox96">
+                                    <span style="padding-left: 5px;">Outdoor Seating</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox97" type="checkbox">
+                                <label for="checkbox97">
+                                    <span style="padding-left: 5px;">Spectacular View</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox98" type="checkbox">
+                                <label for="checkbox98">
+                                    <span style="padding-left: 5px;">Wi-Fi</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox99" type="checkbox">
+                                <label for="checkbox99">
+                                    <span style="padding-left: 5px;">Location by the Sea Water</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox100" type="checkbox">
+                                <label for="checkbox100">
+                                    <span style="padding-left: 5px;">Childrens Menu</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox101" type="checkbox">
+                                <label for="checkbox101">
+                                    <span style="padding-left: 5px;">Summer Terrace</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox102" type="checkbox">
+                                <label for="checkbox102">
+                                    <span style="padding-left: 5px;">Recently Opened</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox103" type="checkbox">
+                                <label for="checkbox103">
+                                    <span style="padding-left: 5px;">Sports Broad‍cast‍ing</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox104" type="checkbox">
+                                <label for="checkbox104">
+                                    <span style="padding-left: 5px;">Fire Place</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox105" type="checkbox">
+                                <label for="checkbox105">
+                                    <span style="padding-left: 5px;">Hookah</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox106" type="checkbox">
+                                <label for="checkbox106">
+                                    <span style="padding-left: 5px;">Dancing Floor</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox107" type="checkbox">
+                                <label for="checkbox107">
+                                    <span style="padding-left: 5px;">Children Animation</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox108" type="checkbox">
+                                <label for="checkbox108">
+                                    <span style="padding-left: 5px;">Childrens Playground</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox109" type="checkbox">
+                                <label for="checkbox109">
+                                    <span style="padding-left: 5px;">Delivery</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox110" type="checkbox">
+                                <label for="checkbox110">
+                                    <span style="padding-left: 5px;">Takeout</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox111" type="checkbox">
+                                <label for="checkbox111">
+                                    <span style="padding-left: 5px;">Online Ordering</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox112" type="checkbox">
+                                <label for="checkbox112">
+                                    <span style="padding-left: 5px;">Striptease</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox113" type="checkbox">
+                                <label for="checkbox113">
+                                    <span style="padding-left: 5px;">Select‍ion of Wine</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox114" type="checkbox">
+                                <label for="checkbox114">
+                                    <span style="padding-left: 5px;">wine Cellar</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox115" type="checkbox">
+                                <label for="checkbox115">
+                                    <span style="padding-left: 5px;">Dining on a Budget</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox116" type="checkbox">
+                                <label for="checkbox116">
+                                    <span style="padding-left: 5px;">Air Conditioner</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox117" type="checkbox">
+                                <label for="checkbox117">
+                                    <span style="padding-left: 5px;">Parking</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox118" type="checkbox">
+                                <label for="checkbox118">
+                                    <span style="padding-left: 5px;">Guest Card Member</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox119" type="checkbox">
+                                <label for="checkbox119">
+                                    <span style="padding-left: 5px;">Happy Hours</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox120" type="checkbox">
+                                <label for="checkbox120">
+                                    <span style="padding-left: 5px;">Live Music in the Evening</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-bottom: 0px;">
+                                <input id="checkbox121" type="checkbox">
+                                <label for="checkbox121">
+                                    <span style="padding-left: 5px;">Free Parking</span>
+                                </label>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                        <a data-toggle="collapse" href="#collapseTen" style="background-color: #F5F5F5;">
+                          Parking Availability
+                        </a>
+                    </div>
+                    <div id="collapseTen" class="panel-collapse collapse in">
+                      <div class="panel-body scroll-pane" style="line-height: 1.1em; margin: 10px; padding-bottom: 5px; max-height: 167px; overflow: auto; border: none;">
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-top: 0px;">
+                                <input id="checkbox122" type="checkbox">
+                                <label for="checkbox122">
+                                    <span style="padding-left: 5px;">Street</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox123" type="checkbox">
+                                <label for="checkbox123">
+                                    <span style="padding-left: 5px;">Garage</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox124" type="checkbox">
+                                <label for="checkbox124">
+                                    <span style="padding-left: 5px;">Valet</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle">
+                                <input id="checkbox125" type="checkbox">
+                                <label for="checkbox125">
+                                    <span style="padding-left: 5px;">Private Lot</span>
+                                </label>
+                            </div>
+                            <div class="checkbox checkbox-info checkbox-circle" style="margin-bottom: 0px;">
+                                <input id="checkbox126" type="checkbox">
+                                <label for="checkbox126">
+                                    <span style="padding-left: 5px;">Validated</span>
+                                </label>
+                            </div>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+            </div>    
+                        
+                    </div>
+                  <div class="tab-pane" id="profile"> 
+                      <a id="map"></a>
                   </div>
                 </div>
             </div>
@@ -1261,6 +2178,9 @@
 <script src="js/syntaxhighlighter/shCore.js"></script>
 <script src="js/syntaxhighlighter/shBrushXml.js"></script>
 <script src="js/syntaxhighlighter/shBrushJScript.js"></script>
+<script src="scroll/jquery.jscrollpane.min.js" type="text/javascript"></script>
+<script src="scroll/jquery.mousewheel.js" type="text/javascript"></script>
+<script src="scroll/mwheelIntent.js" type="text/javascript"></script>
 
 <script src="js/app.js"></script>
 
@@ -1314,6 +2234,27 @@ function checkAnimation() {
 // Capture scroll events
 $(window).scroll(function(){
     checkAnimation();
+});
+</script>
+<script>
+    $(window).scroll(function(){
+  var sticky = $('#header'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 1) sticky.addClass('fixed');
+  else sticky.removeClass('fixed');
+});
+</script>
+<script>
+    $(function()
+{
+	$('.scroll-pane').jScrollPane();
+});
+
+</script>
+<script>
+    $(document).ready(function() {
+    $('#map').load('map.html');
 });
 </script>
 

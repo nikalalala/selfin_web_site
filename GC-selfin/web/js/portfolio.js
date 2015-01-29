@@ -1,6 +1,5 @@
 $(function(){
-    $('#Container').mixItUp();
-
+    
     // Coumnas
     $('#Cols1').click(function() {
         $('.mix').removeClass('col-md-4');

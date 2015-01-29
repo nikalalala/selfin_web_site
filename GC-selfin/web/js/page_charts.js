@@ -1,10 +1,10 @@
 
 var myCircle1 = Circles.create({
     id:         'circles-1',
-    radius:     60,
+    radius:     30,
     value:      43,
     maxValue:   100,
-    width:      5,
+    width:      2,
     text:       function(value){return value + '%';},
     colors:     ['#eee', '#0099da'],
     duration:   1000,
@@ -14,10 +14,10 @@ var myCircle1 = Circles.create({
 
 var myCircle2 = Circles.create({
     id:         'circles-2',
-    radius:     60,
-    value:      60,
+    radius:     30,
+    value:      43,
     maxValue:   100,
-    width:      5,
+    width:      2,
     text:       function(value){return value + '%';},
     colors:     ['#eee', '#0099da'],
     duration:   1000,
@@ -27,10 +27,10 @@ var myCircle2 = Circles.create({
 
 var myCircle3 = Circles.create({
     id:         'circles-3',
-    radius:     60,
-    value:      80,
+    radius:     30,
+    value:      43,
     maxValue:   100,
-    width:      5,
+    width:      2,
     text:       function(value){return value + '%';},
     colors:     ['#eee', '#0099da'],
     duration:   1000,
@@ -40,10 +40,10 @@ var myCircle3 = Circles.create({
 
 var myCircle4 = Circles.create({
     id:         'circles-4',
-    radius:     60,
-    value:      100,
+    radius:     30,
+    value:      43,
     maxValue:   100,
-    width:      5,
+    width:      2,
     text:       function(value){return value + '%';},
     colors:     ['#eee', '#0099da'],
     duration:   1000,
@@ -53,10 +53,10 @@ var myCircle4 = Circles.create({
 
 var myCircle5 = Circles.create({
     id:         'circles-5',
-    radius:     60,
+    radius:     30,
     value:      43,
     maxValue:   100,
-    width:      10,
+    width:      2,
     text:       function(value){return value + '%';},
     colors:     ['#eee', '#0099da'],
     duration:   1000,
@@ -69,7 +69,7 @@ var myCircle6 = Circles.create({
     radius:     60,
     value:      60,
     maxValue:   100,
-    width:      10,
+    width:      5,
     text:       function(value){return value + '%';},
     colors:     ['#eee', '#0099da'],
     duration:   1000,

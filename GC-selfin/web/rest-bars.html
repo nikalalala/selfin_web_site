@@ -1909,21 +1909,21 @@
                                     <div class="col-md-12">
                                         <h3 class="col-md-12" style="padding: 0;">Your Overall Rating Of This Restaurant</h3>
                                         <div class="col-md-12" style="padding: 0; padding-bottom: 20px; border-bottom: 1px dotted #343434;">
-                                            <a class="btn btn-default pull-left col-md-3">Excellent</a>
-                                            <a class="btn btn-default pull-left col-md-3">Very Good</a>
-                                            <a class="btn btn-default pull-left col-md-3">Average</a>
-                                            <a class="btn btn-default pull-left col-md-3">Poor</a>
+                                            <a id="ex" class="btn btn-default pull-left col-md-3" style="border: none; border-top-right-radius: 0px; border-bottom-right-radius: 0px; background-color: #a0ad53;">Excellent <i class="fa fa-check check1" style="display: none; margin-right: -18px;"></i></a>
+                                            <a id="ve" class="btn btn-default pull-left col-md-3" style="border: none; border-radius: 0px; background-color: #c6d462;">Very Good <i class="fa fa-check check2" style="display: none; margin-right: -18px;"></i></a>
+                                            <a id="av" class="btn btn-default pull-left col-md-3" style="border: none; border-radius: 0px; background-color: #ebdd70;">Average <i class="fa fa-check check3" style="display: none; margin-right: -18px;"></i></a>
+                                            <a id="po" class="btn btn-default pull-left col-md-3" style="border: none; border-top-left-radius: 0px; border-bottom-left-radius: 0px; background-color: #ffc000;">Poor <i class="fa fa-check check4" style="display: none; margin-right: -18px;"></i></a>
                                         </div>
                                     </div>
                                     
                                     <div class="col-md-12">
                                         <h3 class="col-md-12" style="padding: 0;">Your Review Title</h3>
-                                        <input class="form-control col-md-12" type="text"  style="padding: 0;"/>
+                                        <input class="form-control col-md-12" type="text"  style="padding: 0; border-radius: 4px !important; background-color: #e2dfd8;"/>
                                     </div>
                                     
                                     <div class="col-md-12" style="padding-bottom: 20px; border-bottom: 1px dotted #343434;">
                                         <h3 class="col-md-12" style="padding: 0;">Your Review</h3>
-                                        <textarea class="form-control col-md-12" rows="10" style="padding: 0;"></textarea>
+                                        <textarea class="form-control col-md-12" rows="10" style="padding: 0; border-radius: 4px; background-color: #e2dfd8;"></textarea>
                                     </div>
                                     
                                     <div class="col-md-6" style="padding-bottom: 20px; border-bottom: 1px dotted #343434;">
@@ -1987,8 +1987,34 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="col-md-12" style="padding-bottom: 20px; border-bottom: 1px dotted #343434;">
-                                        <h3 class="col-md-12" style="padding: 0;"><span class="pull-right">Cost per person</span></h3>
+                                    <div class="col-md-12" style="padding-bottom: 20px; border-bottom: 1px dotted #343434;">                           
+                                        
+                                        <h3 class="col-md-12" style="padding: 0;">Cost per person</h3>
+                                        <div class="radio col-md-6" style="margin-top: -5px;">
+                                            <input name="radio1" id="radio1" value="option1" checked="" type="radio" style="display: none;">
+                                            <label for="radio1" style="line-height: 1.1;">
+                                                Less then 10 GEL
+                                            </label>
+                                        </div>
+                                        <div class="radio col-md-6">
+                                            <input name="radio1" id="radio2" value="option2" type="radio" style="display: none;">
+                                            <label for="radio2" style="line-height: 1.1;">
+                                                From 11 to 30 GEL
+                                            </label>
+                                        </div>
+                                        <div class="radio col-md-6">
+                                            <input name="radio1" id="radio3" value="option3" type="radio" style="display: none;">
+                                            <label for="radio3" style="line-height: 1.1;">
+                                                From 31 to 59 GEL
+                                            </label>
+                                        </div>
+                                        <div class="radio col-md-6">
+                                            <input name="radio1" id="radio4" value="option4" type="radio" style="display: none;">
+                                            <label for="radio4" style="line-height: 1.1;">
+                                                From 75 to 99 GEL
+                                            </label>
+                                        </div>
+                                        <h6 class="col-md-12" style="padding: 0; color: #0099DA;">The Price reflects the estimeted price of a dinner for one with drink and tip, lunch usually costs 25% less.</h6>
 
                                     </div>
                                     
@@ -2252,6 +2278,32 @@
                 $('#gotowriterev').click(function() {
                     $('#rev').hide();
                     $('#writerev').show();
+                });
+</script>
+<script>
+                $('#ex').click(function() {
+                   $('.check1').show(); 
+                   $('.check2').hide();
+                   $('.check3').hide();
+                   $('.check4').hide();
+                });
+                $('#ve').click(function() {
+                   $('.check1').hide(); 
+                   $('.check2').show();
+                   $('.check3').hide();
+                   $('.check4').hide();
+                });
+                $('#av').click(function() {
+                   $('.check1').hide(); 
+                   $('.check2').hide();
+                   $('.check3').show();
+                   $('.check4').hide();
+                });
+                $('#po').click(function() {
+                   $('.check1').hide(); 
+                   $('.check2').hide();
+                   $('.check3').hide();
+                   $('.check4').show();
                 });
 </script>
 

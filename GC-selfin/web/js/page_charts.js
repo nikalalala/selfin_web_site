@@ -1,39 +1,39 @@
 
 var myCircle1 = Circles.create({
     id:         'circles-1',
-    radius:     30,
-    value:      43,
-    maxValue:   100,
+    radius:     15,
+    value:      4.4,
+    maxValue:   5.0,
     width:      2,
-    text:       function(value){return value + '%';},
+    text:       function(value){return value;},
     colors:     ['#eee', '#0099da'],
-    duration:   1000,
+    duration:   2000,
     wrpClass:   'circles-wrp',
     textClass:  'circles-text'
 });
 
 var myCircle2 = Circles.create({
     id:         'circles-2',
-    radius:     30,
-    value:      43,
-    maxValue:   100,
+    radius:     15,
+    value:      4,
+    maxValue:   5.0,
     width:      2,
-    text:       function(value){return value + '%';},
+    text:       function(value){return value;},
     colors:     ['#eee', '#0099da'],
-    duration:   1000,
+    duration:   2000,
     wrpClass:   'circles-wrp',
     textClass:  'circles-text'
 });
 
 var myCircle3 = Circles.create({
     id:         'circles-3',
-    radius:     30,
-    value:      43,
-    maxValue:   100,
+    radius:     15,
+    value:      3.2,
+    maxValue:   5.0,
     width:      2,
-    text:       function(value){return value + '%';},
+    text:       function(value){return value;},
     colors:     ['#eee', '#0099da'],
-    duration:   1000,
+    duration:   2000,
     wrpClass:   'circles-wrp',
     textClass:  'circles-text'
 });

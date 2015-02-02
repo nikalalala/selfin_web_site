@@ -28,6 +28,9 @@
         <link href="https://fontastic.s3.amazonaws.com/yViyDPPuGYAYzq4mp23dMQ/icons.css" rel="stylesheet">
         <link href="css/bootstrap-select.css" rel="stylesheet" type="text/css"/>
         <link href="folder/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css"/>
+        <link href="css/ion.rangeSlider.css" rel="stylesheet" type="text/css"/>
+        <link href="css/ion.rangeSlider.skinNice.css" rel="stylesheet" type="text/css"/>
+        <link href="css/jquery.raty.css" rel="stylesheet" type="text/css"/>
 
 
 
@@ -246,6 +249,41 @@
             .bootstrap-select {
             padding: 0px;
             }
+            .selectreg .btn-default:hover{
+                background-color: transparent !important;
+                border-color: transparent !important;
+            }
+            .selectreg .btn-default{
+                color: #666 !important;
+                background-color: transparent !important;
+                border-color: transparent !important;
+                box-shadow: none !important;
+            }
+            .selectreg .dropdown-menu {
+                color: #666 !important;
+                background-color: #f0f0f0 !important;
+                border-color: transparent !important;
+                box-shadow: none !important;
+                width: 100% !important;
+            }
+            .selectreg {
+                float: right !important;
+            }
+            .border-top {
+             border-top: 3px solid #3fc78a !important;
+            }
+            .tag-button {
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            display: block;
+            float: left;
+            margin-right: 1rem;
+            padding: 0.5rem 0.7rem;
+            border-radius: 3px;
+            position: relative;
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+            text-transform: capitalize;
+        }
         </style>
         <style>
             #map-canvas {
@@ -416,7 +454,7 @@
                 </nav> 
 
 
-
+                <div id="clickscroll" style="position: absolute; top: 100px;"></div>
                 <div id="rb" class="container" style="top: 30px; position: relative;">
                     <section class="margin-bottom">
                         <div class="row">
@@ -430,11 +468,17 @@
                                 <!-- Tab panes -->
                                 <div class="tab-content" style="padding: 0; border: none; background-color: transparent;">
                                     <div class="tab-pane active" id="home">
+                                        
+                                        <div class="col-md-12" style="padding: 13px; padding-top: 20px;">
+                                        <input type="text" id="range_27" name="range_51" value="" />
+                                        </div>
+                                        
+                                        <span class="col-md-12" style="padding: 0; color: #9e9e9e; font-size: 10px; line-height: 1.2em; text-align: center;">The Price reflects the estimeted price of a dinner for one with drink and tip, lunch usually costs 25% less.</span>
 
                                         <div class="col-md-12" style="padding: 0;">
                                             <div class="panel-group" id="accordion">
                                                 <div class="panel panel-default" style="margin-top: 5px;">
-                                                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                                                    <div id="bordertop" class="panel-heading panel-heading-link" style="border-top: 3px solid transparent;">
                                                         <a data-toggle="collapse" href="#collapseOne" style="background-color: #F5F5F5;">
                                                             Vanue Type
                                                         </a>
@@ -560,7 +604,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="panel panel-default">
-                                                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                                                    <div id="bordertop2" class="panel-heading panel-heading-link border-top" style="border-top: 3px solid transparent;">
                                                         <a class="collapsed" data-toggle="collapse" href="#collapseTwo" style="background-color: #F5F5F5;">
                                                             Purpose of Visit
                                                         </a>
@@ -697,7 +741,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="panel panel-default">
-                                                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                                                    <div id="bordertop3" class="panel-heading panel-heading-link border-top" style="border-top: 3px solid transparent;">
                                                         <a class="collapsed" data-toggle="collapse" href="#collapseThree" style="background-color: #F5F5F5;">
                                                             Music
                                                         </a>
@@ -732,7 +776,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="panel panel-default">
-                                                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                                                    <div id="bordertop4" class="panel-heading panel-heading-link border-top" style="border-top: 3px solid transparent;">
                                                         <a class="collapsed" data-toggle="collapse" href="#collapseFour" style="background-color: #F5F5F5;">
                                                             Reservation Information
                                                         </a>
@@ -767,7 +811,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="panel panel-default">
-                                                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                                                    <div id="bordertop5" class="panel-heading panel-heading-link border-top" style="border-top: 3px solid transparent;">
                                                         <a class="collapsed" data-toggle="collapse" href="#collapseFive" style="background-color: #F5F5F5;">
                                                             Attire
                                                         </a>
@@ -808,7 +852,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="panel panel-default">
-                                                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                                                    <div id="bordertop6" class="panel-heading panel-heading-link border-top" style="border-top: 3px solid transparent;">
                                                         <a class="collapsed" data-toggle="collapse" href="#collapseSix" style="background-color: #F5F5F5;">
                                                             Working Days
                                                         </a>
@@ -861,7 +905,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="panel panel-default">
-                                                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                                                    <div id="bordertop7" class="panel-heading panel-heading-link border-top" style="border-top: 3px solid transparent;">
                                                         <a class="collapsed" data-toggle="collapse" href="#collapseSeven" style="background-color: #F5F5F5;">
                                                             Environment
                                                         </a>
@@ -950,7 +994,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="panel panel-default">
-                                                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                                                    <div id="bordertop8" class="panel-heading panel-heading-link border-top" style="border-top: 3px solid transparent;">
                                                         <a class="collapsed" data-toggle="collapse" href="#collapseEight" style="background-color: #F5F5F5;">
                                                             Interior
                                                         </a>
@@ -1075,7 +1119,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="panel panel-default">
-                                                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                                                    <div id="bordertop9" class="panel-heading panel-heading-link border-top" style="border-top: 3px solid transparent;">
                                                         <a class="collapsed" data-toggle="collapse" href="#collapseNine" style="background-color: #F5F5F5;">
                                                             Special Features
                                                         </a>
@@ -1266,7 +1310,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="panel panel-default">
-                                                    <div class="panel-heading panel-heading-link" style="border-top: 3px solid #3fc78a;">
+                                                    <div id="bordertop10" class="panel-heading panel-heading-link border-top" style="border-top: 3px solid transparent;">
                                                         <a class="collapsed" data-toggle="collapse" href="#collapseTen" style="background-color: #F5F5F5;">
                                                             Parking Availability
                                                         </a>
@@ -1312,18 +1356,28 @@
                                     </div>
                                     <div class="tab-pane" id="profile" style="min-height: 550px;"> 
                                         <a id="map"></a>
-                                        <label class="col-md-12" style="padding: 0px;">samegrelo-zemosvaneti</label>
-                                        <select class="selectpicker col-md-12 pull-left" style="padding: 0px;">
+                                        <label class="col-md-12" style="padding: 0px; border-bottom: 1px solid #ccc; padding-bottom: 7px; margin: 0;"><span class="col-md-3">Region:</span><span class="col-md-9">Tbilisi</span></label>
+                                        <label class="col-md-12 pull-left" style="padding: 0; padding-bottom: 0px; border-bottom: 1px solid #ccc; margin: 0;">
+                                        <span class="pull-left col-md-3" style="margin-top: 4px;">City:</span>
+                                        <select class="selectpicker col-md-9 pull-left selectreg" style="padding: 0px;">
                                             <option>dedofliswkharo</option>
                                             <option>Ketchup</option>
                                             <option>Relish</option>
                                         </select>
-                                        <label class="col-md-12" style="padding: 0px;">samegrelo-zemosvaneti</label>
-                                        <select class="selectpicker col-md-12 pull-left" style="padding: 0px;">
-                                            <option>tsalenjikha</option>
+                                        </label>
+                                        
+                                        <label class="col-md-12 pull-left" style="padding: 0; padding-bottom: 0px; border-bottom: 1px solid #ccc; margin: 0;">
+                                        <span class="pull-left col-md-3" style="margin-top: 4px;">District:</span>
+                                        <select class="selectpicker col-md-9 pull-left selectreg" style="padding: 0px;">
+                                            <option>dedofliswkharo</option>
                                             <option>Ketchup</option>
                                             <option>Relish</option>
-                                        </select>			
+                                        </select>
+                                        </label>
+                                        <div class="col-md-12" style="padding: 9px; padding-top: 20px;">
+                                        <input type="text" id="range_26" name="range_51" value="" />
+                                        </div>
+			
                                     </div>
                                 </div>
                             </div>
@@ -1339,15 +1393,15 @@
                                             <li style="padding: 3px;"><b>cuisene</b>: National / Caucasian</li>
                                             <li style="padding: 3px;"><b>price</b>: 20 Gel</li>
                                             <li>
-                                                <a id="openmenu" href="#nav-tabs" class="button button-circle button-royal" style="border-radius: 0px;"><i class="fa fa-map-marker"></i></a>
-                                                <a id="openmenu2" href="#nav-tabs" class="button button-circle button-royal" style="border-radius: 0px;"><i class="fa fa-map-marker"></i></a>
-                                                <a id="openmenu3" href="#nav-tabs" class="button button-circle button-royal" style="border-radius: 0px;"><i class="fa fa-map-marker"></i></a>
-                                                <a id="openmenu4" href="#nav-tabs" class="button button-circle button-royal" style="border-radius: 0px;"><i class="fa fa-map-marker"></i></a>
+                                                <a id="openmenu" href="#clickscroll" class="button button-circle button-royal" style="border-radius: 0px;"><i class="fa fa-info"></i></a>
+                                                <a id="openmenu2" href="#clickscroll" class="button button-circle button-royal" style="border-radius: 0px;">m</a>
+                                                <a id="openmenu3" href="#clickscroll" class="button button-circle button-royal" style="border-radius: 0px;"><i class="fa fa-map-marker"></i></a>
+                                                <a id="openmenu4" href="#clickscroll" class="button button-circle button-royal" style="border-radius: 0px;"><i class="fa fa-star"></i></a>
                                                 
-                                                <a href="#" class="button button-circle button-royal" style="border-radius: 0px; margin-left: 15px;"><i class="fa fa-map-marker"></i></a>
-                                                <a href="#" class="button button-circle button-royal" style="border-radius: 0px;"><i class="fa fa-map-marker"></i></a>
-                                                <a href="#" class="button button-circle button-royal" style="border-radius: 0px;"><i class="fa fa-map-marker"></i></a>
-                                                <a href="#" class="button button-circle button-royal" style="border-radius: 0px;"><i class="fa fa-map-marker"></i></a>
+                                                <a href="#" class="button button-circle button-royal" style="border-radius: 0px; margin-left: 15px;">R</a>
+                                                <a href="#" class="button button-circle button-royal" style="border-radius: 0px;"><i class="fa fa-question"></i></a>
+                                                <a href="#" class="button button-circle button-royal" style="border-radius: 0px;"><i class="fa fa-truck"></i></a>
+                                                <a href="#" class="button button-circle button-royal" style="border-radius: 0px;">%</a>
                                                 
                                                 <a href="#" class="pull-right" style="padding-bottom: 5px; color: #ff9933; text-decoration: none;"><i class="fa fa-heart"></i> Favorites </a>
                                                 <a href="#" class="pull-right" style="padding-bottom: 5px; padding-right: 15px; color: #ff9933; text-decoration: none;"><i class="fa fa-share"></i> Share </a>
@@ -1358,7 +1412,7 @@
                                     </div>
                                 </div>
                                 <div id="menu" class="col-md-12 divmenu" style="padding: 0; background-color: white; border: solid 1px #3FC78A; border-top: 0px; display: none;">
-                                    <div class="col-md-12 mCustomScrollbar" style="max-height: calc(100vh - 255px); overflow-y: auto; padding: 0;">
+                                    <div class="col-md-12 mCustomScrollbar" style="max-height: calc(100vh - 300px); overflow-y: auto; padding: 0;">
                                     <div class="col-md-12">
                                         <h3>About Us</h3>
                                         <p>
@@ -1444,7 +1498,7 @@
 
 
                                 <div id="menu2" class="container col-md-12 divmenu2" style="padding: 0; background-color: white; border: solid 1px #3FC78A; border-top: 0px; display: none;">
-                                    <div class="col-md-12 mCustomScrollbar" style="max-height: calc(100vh - 255px); overflow-y: auto; padding: 0;">
+                                    <div class="col-md-12 mCustomScrollbar" style="max-height: calc(100vh - 300px); overflow-y: auto; padding: 0;">
                                     <div class="portfolio-topbar hidden-sm hidden-xs">
                                         <div class="row">
                                             <div class="col-md-12">
@@ -1708,7 +1762,7 @@
 
 
                                 <div id="menu3" class="col-md-12 divmenu3" style="padding: 0; background-color: white; border: solid 1px #3FC78A; border-top: 0px; display: none;">
-                                    <div class="col-md-12 mCustomScrollbar" style="max-height: calc(100vh - 255px); overflow-y: auto; padding: 0;">
+                                    <div class="col-md-12 mCustomScrollbar" style="max-height: calc(100vh - 300px); overflow-y: auto; padding: 0;">
 
                                     <div id="map-canvas"></div>
                                     
@@ -1717,63 +1771,124 @@
                                 </div>
                                 
                                 <div id="menu4" class="col-md-12 divmenu4" style="padding: 0; background-color: white; border: solid 1px #3FC78A; border-top: 0px; display: none;">
-                                    <div class="col-md-12 mCustomScrollbar" style="max-height: calc(100vh - 255px); overflow-y: auto; padding: 0;">
+                                    <div class="col-md-12 mCustomScrollbar" style="max-height: calc(100vh - 300px); overflow-y: auto; padding: 0;">
                                 <div id="rev">
                                     <div class="col-md-12">
                                     <h4 class="pull-left" style="color: #ff9933;">Total 159 review from Guest Card community</h4>
                                     <h5><a id="gotowriterev" class="pull-right" style="cursor: pointer;">Write Review</a></h5>
                                     </div>
                                     
-                                    <div class="col-md-6" style="padding: 0;">
-                                        <h6 class="col-md-12">100% Recommended</h6>
-                                        
-                                        
-                                        <div id="donut-example" style="height: 190px; position: relative; top: -25px;"></div>
-                                        
-                                    </div>
-                                    
-                                    <div class="col-md-6">
-                                        <h6 class="col-md-12">Rating Summary</h6>
+                                    <div class="col-md-12" style="padding: 0; padding-top: 15px;">
+                                        <div class="col-md-3" style="border-right: 1px solid #ccc; margin-top: 10px; margin-bottom: 10px;">
                                         <div class="col-md-12">
-                                            <span class="col-md-4" style="padding: 0;">Service</span>
-                                            <div class="progress col-md-8" style="padding: 0; margin-top: 3px;">
-                                                <div class="progress-bar pro-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%; z-index: 4;"></div>
-                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 25%; position: absolute; border-right: 5px solid white; z-index: 5; background-color: transparent;"></div>
-                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 50%; position: absolute; border-right: 5px solid white; z-index: 4; background-color: transparent;"></div>
-                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 75%; position: absolute; border-right: 5px solid white; z-index: 3; background-color: transparent;"></div>
+                                            <span class="col-md-1" style="padding: 0;">5</span>
+                                            <div class="progress col-md-11" style="padding: 0; margin-top: 7px; margin-bottom: 2px; height: 12px;">
+                                                <div class="progress-bar pro-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%; z-index: 4; border-right: 2px solid white; border-left: 2px solid white;"></div>
                                             </div>
                                         </div>
                                         
                                         <div class="col-md-12">
-                                            <span class="col-md-4" style="padding: 0;">Food</span>
-                                            <div class="progress col-md-8" style="padding: 0; margin-top: 3px;">
+                                            <span class="col-md-1" style="padding: 0;">4</span>
+                                            <div class="progress col-md-11" style="padding: 0; margin-top: 7px; margin-bottom: 2px; height: 12px;">
                                                 <div class="progress-bar pro-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:75%; z-index: 4;"></div>
-                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 25%; position: absolute; border-right: 5px solid white; z-index: 5; background-color: transparent;"></div>
-                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 50%; position: absolute; border-right: 5px solid white; z-index: 4; background-color: transparent;"></div>
-                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 75%; position: absolute; border-right: 5px solid white; z-index: 3; background-color: transparent;"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 25%; position: absolute; border-right: 2px solid white; border-left: 2px solid white; z-index: 5; background-color: transparent;"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 50%; position: absolute; border-right: 2px solid white; border-left: 2px solid white; z-index: 4; background-color: transparent;"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 75%; position: absolute; border-right: 2px solid white; border-left: 2px solid white; z-index: 3; background-color: transparent;"></div>
                                             </div>
                                         </div>
                                         
                                         <div class="col-md-12">
-                                            <span class="col-md-4" style="padding: 0;">Value</span>
-                                            <div class="progress col-md-8" style="padding: 0; margin-top: 3px;">
+                                            <span class="col-md-1" style="padding: 0;">3</span>
+                                            <div class="progress col-md-11" style="padding: 0; margin-top: 7px; margin-bottom: 2px; height: 12px;">
                                                 <div class="progress-bar pro-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%; z-index: 4;"></div>
-                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 25%; position: absolute; border-right: 5px solid white; z-index: 5; background-color: transparent;"></div>
-                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 50%; position: absolute; border-right: 5px solid white; z-index: 4; background-color: transparent;"></div>
-                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 75%; position: absolute; border-right: 5px solid white; z-index: 3; background-color: transparent;"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 25%; position: absolute; border-right: 2px solid white; border-left: 2px solid white; z-index: 5; background-color: transparent;"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 50%; position: absolute; border-right: 2px solid white; border-left: 2px solid white; z-index: 4; background-color: transparent;"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 75%; position: absolute; border-right: 2px solid white; border-left: 2px solid white; z-index: 3; background-color: transparent;"></div>
                                             </div>
                                         </div>
                                         
                                         <div class="col-md-12">
-                                            <span class="col-md-4" style="padding: 0;">Atmosphare</span>
-                                            <div class="progress col-md-8" style="padding: 0; margin-top: 3px;">
+                                            <span class="col-md-1" style="padding: 0;">2</span>
+                                            <div class="progress col-md-11" style="padding: 0; margin-top: 7px; margin-bottom: 2px; height: 12px;">
                                                 <div class="progress-bar pro-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:25%; z-index: 4;"></div>
-                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 25%; position: absolute; border-right: 5px solid white; z-index: 5; background-color: transparent;"></div>
-                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 50%; position: absolute; border-right: 5px solid white; z-index: 4; background-color: transparent;"></div>
-                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 75%; position: absolute; border-right: 5px solid white; z-index: 3; background-color: transparent;"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 25%; position: absolute; border-right: 2px solid white; border-left: 2px solid white; z-index: 5; background-color: transparent;"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 50%; position: absolute; border-right: 2px solid white; border-left: 2px solid white; z-index: 4; background-color: transparent;"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 75%; position: absolute; border-right: 2px solid white; border-left: 2px solid white; z-index: 3; background-color: transparent;"></div>
+                                            </div>
+                                        </div>
+                                            
+                                        <div class="col-md-12">
+                                            <span class="col-md-1" style="padding: 0;">1</span>
+                                            <div class="progress col-md-11" style="padding: 0; margin-top: 7px; margin-bottom: 2px; height: 12px;">
+                                                <div class="progress-bar pro-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:25%; z-index: 4;"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 25%; position: absolute; border-right: 2px solid white; border-left: 2px solid white; z-index: 5; background-color: transparent;"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 50%; position: absolute; border-right: 2px solid white; border-left: 2px solid white; z-index: 4; background-color: transparent;"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 75%; position: absolute; border-right: 2px solid white; border-left: 2px solid white; z-index: 3; background-color: transparent;"></div>
                                             </div>
                                         </div>
                                     </div>
+                                        <div class="col-md-8" style="padding: 15px;">
+                                            <span class="pull-left" style="font-size: 50px; padding-right: 10px; line-height: 0.55;">4.0</span>
+                                            <div class="pull-left" style="line-height: 1.3; position: relative; top: -11px; left: 10px;">
+                                                <span style="font-size: 20px;">Overall Rating</span>
+                                                <div id="starread"><span class="pull-right" style="font-size: 11px; line-height: 1.7;">based on 15 reviews since October 4, 2014</span></div>
+                                                <div class="row">
+                                                    <div class="pull-left" style="padding-left: 18px;">
+                                                        <h6>Food</h6>
+                                                        <div class="circle" id="circles-1" style="font-size: 10px;"></div>
+                                                    </div>
+                                                    
+                                                    <div class="pull-left" style="padding-left: 50px;">
+                                                        <h6>Service</h6>
+                                                        <div class="circle" id="circles-2" style="font-size: 10px;"></div>
+                                                    </div>
+                                                    
+                                                    <div class="pull-left" style="padding-left: 50px;">
+                                                        <h6>Ambience</h6>
+                                                        <div class="circle" id="circles-3" style="font-size: 10px;"></div>
+                                                    </div>
+                                                    
+                                                    <div class="pull-left" style="padding-left: 10px; padding-top: 58px;">
+                                                        <span class="bar">1,2,3,4,5</span>
+                                                    </div>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    <div class="pull-left" style="padding-left: 10px;">
+                                                        <h6>Noise Level</h6>
+                                                        <p style="line-height: 2;">Energetic</p>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        
+                                    </div>
+                                        
+                                        <h3 class="col-md-12"><i class="fa fa-smile-o"></i>100% would recommend it to a friend</h3>
+                                        <div class="col-lg-12">
+                                            <div class="tag-button pull-left">great for outdoor dining (6)</div>
+                                            <div class="tag-button pull-left">kid-friendly (6)</div>
+                                            <div class="tag-button pull-left">great for lunch (3)</div>
+                                            <div class="tag-button pull-left">vibrant bar scene (3)</div>
+                                            <div class="tag-button pull-left">hot spot (3)</div>
+                                            <a id="seeall" class="btn btn-default">See All</a>
+                                            
+                                            
+                                            <div id="all" style="display: none;">
+                                            <div class="tag-button pull-left">late-night find (3)</div>
+                                            <div class="tag-button pull-left">fit for foodies (2)</div>
+                                            <div class="tag-button pull-left">good for groups (2)</div>
+                                            <div class="tag-button pull-left">neighborhood gem (2)</div>
+                                            <div class="tag-button pull-left">notable wine list (1)</div>
+                                            <div class="tag-button pull-left">scenic view (1)</div>
+                                            <div class="tag-button pull-left">great for brunch (1)</div>
+                                            <div class="tag-button pull-left">special occasion (1)</div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+
+                                        </div> 
                                     
                                     <div class="col-md-12" style="padding: 0;">
                                         <div class="col-md-12">
@@ -2025,8 +2140,10 @@
                                         
                                     </div>
                                 </div>
+                                
 
-                            </div>
+                                        
+
                             </div>
 
 
@@ -2076,6 +2193,10 @@
         <script src="js/portfolio.js"></script>
         <script src="js/page_charts.js"></script>
         <script src="js/googlemap.js" type="text/javascript"></script>
+        <script src="js/jquery.countTo.js" type="text/javascript"></script>
+        <script src="js/ion.rangeSlider.js" type="text/javascript"></script>
+        <script src="js/jquery.raty.js" type="text/javascript"></script>
+        <script src="js/jquery.peity.js" type="text/javascript"></script>
         <script>
             function initialize() {
                 var mapCanvas = document.getElementById('map-canvas');
@@ -2226,6 +2347,8 @@
                     width: 'show'
                 }, 2000);
                 
+                $(".bar").peity("bar");
+                
             });
  
 
@@ -2306,7 +2429,122 @@
                    $('.check4').show();
                 });
 </script>
+<script>
+    // Start slider
+$("#range_26").ionRangeSlider({
+    type: "single",
+    min: 0,
+    max: 20,
+    from: 20,
+    postfix: "km",
+    grid: true
+});
+</script>
+<script>
+    // Start slider
+$("#range_27").ionRangeSlider({
+    type: "double",
+    min: 100,
+    max: 2000,
+    from: 100,
+    to: 2000,
+    postfix: "GEL",
+    grid: true
+});
+</script>
+<script>
+    $('#bordertop').click(function () {
+    $("#bordertop").toggleClass('border-top');
+});
+    $('#bordertop2').click(function () {
+    $("#bordertop2").toggleClass('border-top');
+});
+    $('#bordertop3').click(function () {
+    $("#bordertop3").toggleClass('border-top');
+});
+    $('#bordertop4').click(function () {
+    $("#bordertop4").toggleClass('border-top');
+});
+    $('#bordertop5').click(function () {
+    $("#bordertop5").toggleClass('border-top');
+});
+    $('#bordertop6').click(function () {
+    $("#bordertop6").toggleClass('border-top');
+});
+    $('#bordertop7').click(function () {
+    $("#bordertop7").toggleClass('border-top');
+});
+    $('#bordertop8').click(function () {
+    $("#bordertop8").toggleClass('border-top');
+});
+    $('#bordertop9').click(function () {
+    $("#bordertop9").toggleClass('border-top');
+});
+    $('#bordertop10').click(function () {
+    $("#bordertop10").toggleClass('border-top');
+});
+</script>
+<script>
+    function loadMorris(){
+    jQuery(function ($) {
+      // custom formatting example
+      $('#earth').data('countToOptions', {
+        formatter: function (value, options) {
+          return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+        }
+      });
+      
+      // custom callback when counting completes
+      $('#countdown').data('countToOptions', {
+        onComplete: function (value) {
+          $(this).text('BLAST OFF!').addClass('red');
+        }
+      });
+      
+      // another custom callback for counting to infinity
+      $('#infinity').data('countToOptions', {
+        onComplete: function (value) {
+          count.call(this, {
+            from: value,
+            to: value + 1
+          });
+        }
+      });
+      
+      // start all the timers
+      $('.timer').each(count);
+      
+      // restart a timer when a button is clicked
+      $('.restart').click(function (event) {
+        event.preventDefault();
+        var target = $(this).data('target');
+        count.call($(target));
+      });
+      
+      function count(options) {
+        var $this = $(this);
+        options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+        $this.countTo(options);
+      }
+    });
+}
+</script>
+<script>
+    $('#starread').raty({ readOnly: true, score: 4 });
+    $('#starread2').raty({ readOnly: true, score: 4.5 });
+    $('#starread3').raty({ readOnly: true, score: 3.5 });
+    $('#starread4').raty({ readOnly: true, score: 3 });
+    $('#starread5').raty({ readOnly: true, score: 4 });
+</script>
+<script>
+        $('#seeall').click(function () {
+    $("#all").show();
+    $("#seeall").hide();
+});
+</script>
+<!--<b class="timer" id="lollipop" data-to="100" data-speed="2000"></b>-->
 
     </body>
 
 </html>
+  

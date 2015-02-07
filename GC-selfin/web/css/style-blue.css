@@ -3591,11 +3591,6 @@ a.thumbnail.active {
   padding: 15px 14px 14px 14px;
   height: 50px;
 }
-@media (min-width: 768px) and (max-width: 842px) {
-  .navbar-right {
-    float: left !important;
-  }
-}
 @media (max-width: 991px) {
   .sb-icon-navbar i {
     position: absolute;

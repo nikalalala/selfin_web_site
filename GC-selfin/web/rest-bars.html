@@ -210,6 +210,15 @@
             .right0 {
                 right: 0 !important;
             }
+            .ellipsis {
+                white-space: nowrap; 
+                width: 125px; 
+                overflow: hidden;
+                text-overflow: ellipsis; 
+            }
+            .background:hover {
+                background-color: #f0f0f0;
+            }
         </style>
         <style>
             #map-canvas {
@@ -328,9 +337,54 @@
                                 </li>
                                 <li class="">
                                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" style="background-color: white; background-image: none; color: black;"><i class="fa fa-heart"></i></a>
-                                    <ul class="dropdown-menu dropdown-menu-right" style="box-shadow: none;">
+                                    <ul class="dropdown-menu dropdown-menu-right" style="box-shadow: none; min-width: 250px; background: white;">
                                         <li>
-                                            <div style="position: relative; height: 100px; width: 100%; background-color: white; border: solid 1px white; box-shadow: none;">
+                                            <div style="position: relative; width: 100%; background-color: white; border: solid 1px white; box-shadow: none;">
+                                                <div class="col-md-12 background" style="padding: 5px; height: 59px; border-bottom: 1px solid #ccc;">
+                                                    <a style="position: absolute; top: 0px; right: 0px; cursor: pointer; z-index: 555555;"><i class="fa fa-remove"></i></a>
+                                                    <img class="col-md-3" src="img/restaurant.jpg" alt="" style="padding: 0; height: 100%;"/>
+                                                    <div class="col-md-9" style="padding: 0;">
+                                                        <span class="col-md-12 ellipsis">Taglaura</span>
+                                                        <div class="col-md-9" id="starread12"></div>
+                                                        <div class="checkbox checkbox-info col-md-3" style="margin: 0px; margin-top: 4.5px; line-height: 1.5; padding-right: 4px;">
+                                                            <input id="checkboxheart" type="checkbox" style="display: none;">
+                                                                <label for="checkboxheart" class="pull-right">
+                                                                </label>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-12 background" style="padding: 5px; height: 59px; border-bottom: 1px solid #ccc;">
+                                                    <a style="position: absolute; top: 0px; right: 0px; cursor: pointer; z-index: 555555;"><i class="fa fa-remove"></i></a>
+                                                    <img class="col-md-3" src="img/demo/img10.jpg" alt="" style="padding: 0; height: 100%;"/>
+                                                    <div class="col-md-9" style="padding: 0;">
+                                                        <span class="col-md-12 ellipsis">Shemoixede Genacvale</span>
+                                                        <div class="col-md-9" id="starread13"></div>
+                                                        <div class="checkbox checkbox-info col-md-3" style="margin: 0px; margin-top: 4.5px; line-height: 1.5; padding-right: 4px;">
+                                                            <input id="checkboxheart2" type="checkbox" style="display: none;">
+                                                                <label for="checkboxheart2" class="pull-right">
+                                                                </label>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-12 background" style="padding: 5px; height: 59px; border-bottom: 1px solid #ccc;">
+                                                    <a style="position: absolute; top: 0px; right: 0px; cursor: pointer; z-index: 555555;"><i class="fa fa-remove"></i></a>
+                                                    <img class="col-md-3" src="img/demo/img08.jpg" alt="" style="padding: 0; height: 100%;"/>
+                                                    <div class="col-md-9" style="padding: 0;">
+                                                        <span class="col-md-12 ellipsis">Tiflisi</span>
+                                                        <div class="col-md-9" id="starread14"></div>
+                                                        <div class="checkbox checkbox-info col-md-3" style="margin: 0px; margin-top: 4.5px; line-height: 1.5; padding-right: 4px;">
+                                                            <input id="checkboxheart3" type="checkbox" style="display: none;">
+                                                                <label for="checkboxheart3" class="pull-right">
+                                                                </label>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-12" style="text-align: center;">
+                                                    <a class="btn btn-default" style="margin: 5px; line-height: 1;">Compare Restaurants</a>
+                                                </div>
                                                 
                                             </div>
                                         </li>
@@ -338,10 +392,24 @@
                                 </li>
                                 <li class="">
                                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" style="background-color: white; background-image: none; color: black;"><i class="fa fa-user"></i></a>
-                                    <ul class="dropdown-menu dropdown-menu-right" style="box-shadow: none;">
+                                    <ul class="dropdown-menu dropdown-menu-right" style="box-shadow: none; min-width: 350px; background: white;">
                                         <li>
-                                            <div style="position: relative; height: 100px; width: 100%; background-color: white; border: solid 1px white; box-shadow: none;">
-                                                
+                                            <div style="position: relative; width: 100%; background-color: white; border: solid 1px white; box-shadow: none;">
+                                                <div class="col-md-12"  style="padding: 15px;">
+                                                    <div class="col-md-4" style="padding: 0;">
+                                                        <div class="col-md-12" style="padding: 0; text-align: center;">
+                                                            <img class="col-md-12" src="img/demo/img20.jpg" alt=""  style="padding: 0;"/>
+                                                            <div class="col-md-12" style="position: absolute; height: 20px; bottom: 0; background-color: rgba(255, 255, 255, 0.34); color: white; font-size: 13px; padding: 0; line-height: 1.4em; cursor: pointer;">Change Picture</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8" style="padding: 0; padding-left: 10px;">
+                                                        <span class="col-md-12" style="padding: 0;">Eleonora Khurckvitadze</span>
+                                                        <span class="col-md-12" style="padding: 0;">User Name</span>
+                                                        <span class="col-md-12" style="padding: 0;">Balance: 0 GEL</span>
+                                                        <a href="userprofile.html" class="col-md-5 btn btn-info pull-left" style="padding: 0; bottom: 0;">Edit Profile</a>
+                                                        <a class="col-md-5 btn btn-default pull-right" style="padding: 0; bottom: 0;">Sign Out</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </li>
                                     </ul>
@@ -353,34 +421,33 @@
                                             <div style="position: relative; width: 100%; box-shadow: none;">
                                                 <div style="padding: 0; text-align: center;">
                                                     <h3 class="no-margin-top" style="border-bottom: 1px solid #ccc; padding-bottom: 4px; margin: 0;">Your Order</h3>
-                                                    <span class="col-md-12 col-sm-12 col-xs-12">Select delicious dish from the menu</span>
                                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                                         <a class="fa fa-minus pull-left btn btn-default" style="font-size: 8px; padding: 5px 5px; margin-top: 2px;"></a>
                                                         <a class="fa fa-plus pull-left btn btn-default" style="font-size: 8px; padding: 5px 5px; margin-top: 2px;"></a>
-                                                        <span class="pull-left">1 Pizza "4 cheese"</span>
-                                                        <span class="pull-right">15.00 GEL</span>
+                                                        <span class="pull-left ellipsis" title="Omelette with Tomato and Herbs"><span>1</span> Omelette with Tomato and Herbs</span>
+                                                        <span class="pull-right">127.00 GEL</span>
                                                     </div>
                                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                                         <a class="fa fa-minus pull-left btn btn-default" style="font-size: 8px; padding: 5px 5px; margin-top: 2px;"></a>
                                                         <a class="fa fa-plus pull-left btn btn-default" style="font-size: 8px; padding: 5px 5px; margin-top: 2px;"></a>
-                                                        <span class="pull-left">1 Pizza "5 cheese"</span>
+                                                        <span class="pull-left ellipsis" title='Pizza "4 cheese"'><span>1</span> Pizza "4 cheese"</span>
                                                         <span class="pull-right">15.00 GEL</span>
                                                     </div>
-                                                    <div class="col-md-12 col-sm-12 col-xs-12" style="padding: 0; padding-top: 10px; border-top: 1px solid #ccc;">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12" style="padding: 0; border-top: 1px solid #ccc;">
                                                         <div class="col-md-12 col-sm-12 col-xs-12">
                                                             <span class="pull-left">Menu</span>
-                                                            <span class="pull-right">30.00 GEL</span>
+                                                            <span class="pull-right">164.00 GEL</span>
                                                         </div>
                                                         <div class="col-md-12 col-sm-12 col-xs-12">
                                                             <span class="pull-left">Delivery</span>
-                                                            <span class="pull-right">5.00 GEL</span>
+                                                            <span class="pull-right">6.00 GEL</span>
                                                         </div>
                                                         <div class="col-md-12 col-sm-12 col-xs-12">
                                                             <span class="pull-left"><b>Total</b></span>
-                                                            <span class="pull-right"><b>35.00 GEL</b></span>
+                                                            <span class="pull-right"><b>170.00 GEL</b></span>
                                                         </div>
                                                     </div>
-                                                    <span class="col-md-12 col-sm-12 col-xs-12" style="background: #3fc78a; color: white; margin-top: 10px;"><i class="fa fa-clock-o"></i> Delivery time: 1 Hour</span>
+                                                    <span class="col-md-12 col-sm-12 col-xs-12" style="background: #3fc78a; color: white;"><i class="fa fa-clock-o"></i> Delivery time: 1 Hour</span>
                                                     <a class="col-md-12 col-sm-12 col-xs-12 btn btn-danger"><i class="fa fa-shopping-cart"></i> Order</a>
                                                 </div>
                                             </div>
@@ -1330,15 +1397,15 @@
                                     <div class="col-md-4 col-sm-4 col-xs-4" style="padding: 7px 0px 0px 10px;">
                                         <i class="fa fa-heart-o heart" style="position: absolute; color: white; left: 10px; z-index: 5; top: 10px; font-size: 25px; cursor: pointer;"></i>
                                         <ul class="bxslider" id="bx2">
-                                          <li><img src="img/restaurant.jpg" class="img-responsive" style="height: 183px;"></li>
-                                          <li><img src="img/demo/w6.jpg" class="img-responsive" style="height: 183px;"></li>
-                                          <li><img src="img/demo/w7.jpg" class="img-responsive" style="height: 183px;"></li>
+                                          <li><img src="img/restaurant.jpg" class="img-responsive" style="height: 183px; max-width: none;"></li>
+                                          <li><img src="img/demo/w6.jpg" class="img-responsive" style="height: 183px; max-width: none;"></li>
+                                          <li><img src="img/demo/w7.jpg" class="img-responsive" style="height: 183px; max-width: none;"></li>
                                         </ul>
                                     </div>
                                     <div class="col-md-8" style="padding: 0;">
                                         <ul class="pull-left col-md-12" style="list-style-type:none; padding-left: 15px;">
-                                            <li style="font-size: 20px; color: #0099DA; padding: 3px;">Taglaura</li>
-                                            <li style="padding: 3px;">Georgia <span class="pull-right"><i class="fa fa-clock-o"></i> 09:00 - 02:00 | <b style="color: green;">OPEN</b></span></li>
+                                            <li style="padding: 3px;"><span style="font-size: 20px; color: #0099DA;">Taglaura</span> <span class="pull-right"><i class="fa fa-clock-o"></i> 09:00 - 02:00 | <b style="color: green;">OPEN</b></span></li>
+                                            <li style="padding: 3px;">Georgia</li>
                                             <li style="padding: 3px;">Balakhvani, Kutaisi</li>
                                             <li style="padding: 3px;"><b>cuisene</b>: National / Caucasian</li>
                                             <li style="padding: 3px;"><b>price</b>: 20 Gel</li>
@@ -1721,7 +1788,7 @@
                                 <div id="rev">
                                     
                                     <div class="col-md-12 col-sm-12 col-xs-12" style="padding: 0; padding-top: 10px;">
-                                        <div class="col-md-3 col-sm-3 col-xs-12" style="border-right: 1px solid #ccc; margin-top: 10px; margin-bottom: 10px;">
+                                        <div class="col-md-3 col-sm-3 col-xs-3" style="border-right: 1px solid #ccc; margin-top: 10px; margin-bottom: 10px;">
                                         <div class="col-md-12 col-sm-12 col-xs-12">
                                             <span class="col-md-1 col-sm-1 col-xs-1" style="padding: 0;">5</span>
                                             <div class="progress col-md-11 col-sm-11 col-xs-11" style="padding: 0; margin-top: 7px; margin-bottom: 2px; height: 12px;">
@@ -2394,6 +2461,9 @@ $("#range_27").ionRangeSlider({
     $('#starread9').raty({ score: 0 });
     $('#starread10').raty({ score: 0 });
     $('#starread11').raty({ readOnly: true, score: 4.5 });
+    $('#starread12').raty({ readOnly: true, score: 4.5 });
+    $('#starread13').raty({ readOnly: true, score: 5 });
+    $('#starread14').raty({ readOnly: true, score: 4 });
 </script>
 <script>
         $('#seeall').click(function () {

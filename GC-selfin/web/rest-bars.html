@@ -1404,7 +1404,7 @@
                                     </div>
                                     <div class="col-md-8" style="padding: 0;">
                                         <ul class="pull-left col-md-12" style="list-style-type:none; padding-left: 15px;">
-                                            <li style="padding: 3px;"><span style="font-size: 20px; color: #0099DA;">Taglaura</span> <span class="pull-right"><i class="fa fa-clock-o"></i> 09:00 - 02:00 | <b style="color: green;">OPEN</b></span></li>
+                                            <li style="padding: 3px;"><a href="restaurant.html" style="font-size: 20px; color: #0099DA;">Taglaura</a> <span class="pull-right"><i class="fa fa-clock-o"></i> 09:00 - 02:00 | <b style="color: green;">OPEN</b></span></li>
                                             <li style="padding: 3px;">Georgia</li>
                                             <li style="padding: 3px;">Balakhvani, Kutaisi</li>
                                             <li style="padding: 3px;"><b>cuisene</b>: National / Caucasian</li>
@@ -2155,9 +2155,6 @@
             });
         </script>
         <script>
-            $('.selectpicker').selectpicker();
-        </script>
-        <script>
             (function($) {
                 $(window).load(function() {
                     $(".content").mCustomScrollbar();
@@ -2174,6 +2171,7 @@
             });
         </script>
         <script>
+            var tempScrollTop = $(window).scrollTop();
             $(window).scroll(function() {
                 var sticky = $('#header'),
                         scroll = $(window).scrollTop();
@@ -2183,6 +2181,7 @@
                 else
                     sticky.removeClass('fixed');
             });
+            $(window).scrollTop(tempScrollTop);
         </script>
         <script>
             $(window).scroll(function() {
@@ -2498,6 +2497,11 @@ $("#range_27").ionRangeSlider({
     $('#menu2').click(function(e) {
         e.stopPropagation();
     });
+</script>
+<script>
+    $(document).ready(function(){
+    $(this).scrollTop(0);
+});
 </script>
 
     </body>

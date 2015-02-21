@@ -68,6 +68,13 @@
                 top: 0;
                 width: 100%;
             }
+            .fixed2 {
+                position: fixed !important; 
+                top: 0;
+                width: 190px;
+                height: 100vh;
+                background: white;
+            }
             .dropdown-menu:after {
                 position: absolute;
                 top: -6px;
@@ -407,7 +414,18 @@
 
                 
                 <div id="rb" class="container" style="top: 30px; position: relative;">
-                    <div class="col-md-12" style="background-color: white; padding-bottom: 20px;">
+                    
+                    <div class="col-md-2" style="text-align: center; padding: 0; background: white; line-height: 3; height: 100vh;">
+                        <div id="left-panel">
+                        <a id="scrollonmenu" href="#menu" class="col-md-12 col-sm-12 col-xs-12 background" style="padding: 0; color: #5a4d39; text-decoration: none;">Reservation</a>
+                        <a id="scrollonmenu2" href="#menu2" class="col-md-12 col-sm-12 col-xs-12 background" style="padding: 0; color: #5a4d39; text-decoration: none;">About</a>
+                        <a id="scrollonmenu3" href="#menu3" class="col-md-12 col-sm-12 col-xs-12 background" style="padding: 0; color: #5a4d39; text-decoration: none;">Menu</a>
+                        <a id="scrollonmenu4" href="#menu4" class="col-md-12 col-sm-12 col-xs-12 background" style="padding: 0; color: #5a4d39; text-decoration: none;">Special Offers</a>
+                        <a id="scrollonmenu5"  href="#menu5" class="col-md-12 col-sm-12 col-xs-12 background" style="padding: 0; color: #5a4d39; text-decoration: none;">Reviews</a>
+                        </div>
+                    </div>
+                    
+                    <div id="menu" class="col-md-10 pull-right" style="background-color: white; padding-top: 50px;">
                         <h2 class="col-md-12" style="color: #0099DA;"><b>Personal info</b></h2>
                         
                         <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
@@ -431,25 +449,97 @@
                         </div>
                     </div>
                     
-                    <div class="col-md-12" style="background-color: white; margin-top: 30px;">
-                        <h3 class="col-md-12">Personal info</h3>
+                    <div id="menu2" class="col-md-10 pull-right" style="background-color: white; padding-top: 50px;">
+                        <h2 class="col-md-12" style="color: #0099DA;"><b>Personal info</b></h2>
                         
-                        <div class="col-md-12" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
                         <div class="col-md-6"><b>Email</b></div>
                         <div class="col-md-6">mygmail@gmail.com</div>
                         </div>
                         
-                        <div class="col-md-12" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
                         <div class="col-md-6"><b>Phone</b></div>
-                        <div class="col-md-6">555 555 555</div>
+                        <div class="col-md-6"><span>555 555 555</span><a class="btn btn-default pull-right"><i class="fa fa-edit"></i></a></div>
                         </div>
                         
-                        <div class="col-md-12" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
                         <div class="col-md-6"><b>Language</b></div>
                         <div class="col-md-6">English</div>
                         </div>
                         
-                        <div class="col-md-12" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-6"><b>Google+ profile</b></div>
+                        <div class="col-md-6">Edit your Google+ profile</div>
+                        </div>
+                    </div>
+                    
+                    <div id="menu3" class="col-md-10 pull-right" style="background-color: white; padding-top: 50px;">
+                        <h2 class="col-md-12" style="color: #0099DA;"><b>Personal info</b></h2>
+                        
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-6"><b>Email</b></div>
+                        <div class="col-md-6">mygmail@gmail.com</div>
+                        </div>
+                        
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-6"><b>Phone</b></div>
+                        <div class="col-md-6"><span>555 555 555</span><a class="btn btn-default pull-right"><i class="fa fa-edit"></i></a></div>
+                        </div>
+                        
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-6"><b>Language</b></div>
+                        <div class="col-md-6">English</div>
+                        </div>
+                        
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-6"><b>Google+ profile</b></div>
+                        <div class="col-md-6">Edit your Google+ profile</div>
+                        </div>
+                    </div>
+                    
+                    <div id="menu4" class="col-md-10 pull-right" style="background-color: white; padding-top: 50px;">
+                        <h2 class="col-md-12" style="color: #0099DA;"><b>Personal info</b></h2>
+                        
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-6"><b>Email</b></div>
+                        <div class="col-md-6">mygmail@gmail.com</div>
+                        </div>
+                        
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-6"><b>Phone</b></div>
+                        <div class="col-md-6"><span>555 555 555</span><a class="btn btn-default pull-right"><i class="fa fa-edit"></i></a></div>
+                        </div>
+                        
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-6"><b>Language</b></div>
+                        <div class="col-md-6">English</div>
+                        </div>
+                        
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-6"><b>Google+ profile</b></div>
+                        <div class="col-md-6">Edit your Google+ profile</div>
+                        </div>
+                    </div>
+                    
+                    <div id="menu5" class="col-md-10 pull-right" style="background-color: white; padding-top: 50px;">
+                        <h2 class="col-md-12" style="color: #0099DA;"><b>Personal info</b></h2>
+                        
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-6"><b>Email</b></div>
+                        <div class="col-md-6">mygmail@gmail.com</div>
+                        </div>
+                        
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-6"><b>Phone</b></div>
+                        <div class="col-md-6"><span>555 555 555</span><a class="btn btn-default pull-right"><i class="fa fa-edit"></i></a></div>
+                        </div>
+                        
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
+                        <div class="col-md-6"><b>Language</b></div>
+                        <div class="col-md-6">English</div>
+                        </div>
+                        
+                        <div class="col-md-12 background" style="border-top: 1px solid #ccc; padding: 20px;">
                         <div class="col-md-6"><b>Google+ profile</b></div>
                         <div class="col-md-6">Edit your Google+ profile</div>
                         </div>
@@ -735,7 +825,7 @@
 
 </script>
 <script>
-    $('#openmenu, #openmenu2, #openmenu3, #openmenu4[href*=#]:not([href=#])').click(function() {
+    $('#scrollonmenu, #scrollonmenu2, #scrollonmenu3, #scrollonmenu4, #scrollonmenu5[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
         || location.hostname == this.hostname) {
 
@@ -908,6 +998,33 @@ $("#range_27").ionRangeSlider({
     $('#menu2').click(function(e) {
         e.stopPropagation();
     });
+</script>
+        <script>
+            $(window).scroll(function() {
+                var sticky = $('#left-panel'),
+                        scroll = $(window).scrollTop();
+
+                if (scroll >= 80)
+                    sticky.addClass('fixed2');
+                else
+                    sticky.removeClass('fixed2');
+            });
+        </script>
+                <script>
+            $(window).scroll(function() {
+                var sticky = $('#left-panel'),
+                        scroll = $(window).scrollTop();
+
+                if (scroll >= 80)
+                    sticky.addClass('margin');
+                else
+                    sticky.removeClass('margin');
+            });
+        </script>
+        <script>
+    $(document).ready(function(){
+    $(this).scrollTop(0);
+});
 </script>
 
     </body>
